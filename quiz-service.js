@@ -65,6 +65,9 @@ const QuizService = {
         const url = `/api/quizHistories?regStart=${encodeURIComponent(startStr)}&regEnd=${encodeURIComponent(endStr)}`;
         const response = await fetch(url);
         const data = await response.json();
+
+        // 랜덤으로 섞기
+        data.list.sort(() => Math.random() - 0.5);
         
         // 1. 오답인 항목들만 필터링 (correctYn === 'N')
         const wrongItems = data.list.filter(item => item.correctYn === 'N');
