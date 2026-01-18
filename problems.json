@@ -1,0 +1,1952 @@
+[
+  {
+    "templateId": "_n10db63g5",
+    "category": "소프트웨어 개발 모음",
+    "id": "a0",
+    "question": "프로그램의 소스나 코드에서 결함을 찾아내고 이를 확인하려는 작업을 의미하는 것은?",
+    "options": [
+      {
+        "text": "소스 코드 인스펙션",
+        "isCorrect": true
+      },
+      {
+        "text": "재공학",
+        "isCorrect": false
+      },
+      {
+        "text": "역공학",
+        "isCorrect": false
+      },
+      {
+        "text": "재사용",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "- 재공학(Reengineering) : 새로운 요구에 맞도록 기존 싯스템을 이용하여 보다 나은 시스템을 구축하고, 새로운 기능을 추가하여 소프트웨어 성능을 향상시키는 것\n- 역공학(Reverse Engineering) : 기존 소프트웨어를 분석하여 소프트웨어 개발 과정과 데이터 처리 과정을 설명하는 분석 및 설계 정보를 재발견하거나 다시 만들어 내는 활동\n- 소프트웨어 재사용(Software Reuse) : 이미 개발되어 인정받은 소프트웨어의 전체 혹은 일부분을 다른 소프트웨어 개발이나 유지에 사용하는 것"
+  },
+  {
+    "templateId": "_n10db63g5",
+    "category": "소프트웨어 개발 모음",
+    "id": "a1",
+    "question": "코드 검사 수행 시 발견된 오류와 그 설명으로 틀린 것은?",
+    "options": [
+      {
+        "text": "데이터 오류(DA: Data Error)는 데이터 유형 정의, 변수 선언, 매개 변수 등에서 나타나는 오류이다.",
+        "isCorrect": false
+      },
+      {
+        "text": "기능 오류(FN: Function Error)는 서브루틴이나 블록이 수행하는 방법(How)이 잘못되어 있는 오류이다.",
+        "isCorrect": true
+      },
+      {
+        "text": "성능 오류(PF: Performance Error)는 프로그램을 수행하며 요구되는 성능을 만족시키지 못하는 오류이다.",
+        "isCorrect": false
+      },
+      {
+        "text": "문서 오류(DC: Documentation Error)는 프로그램 구성 요소인 선언 부분, 잘못되거나 불필요한 주석 등을 의미한다.",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "- 기능 오류는 서브루틴이나 블록이 잘못된 것(What)을 수행하는 오류입니다.\n- 서브루틴이나 블록이 수행하는 방법(How)이 잘못되어 있는 오류는 논리 오류(LO: Logic Error)에 대한 설명입니다."
+  },
+  {
+    "templateId": "_n10db63g5",
+    "category": "소프트웨어 개발 모음",
+    "id": "a2",
+    "question": "이진 트리의 특성으로 틀린 것은? (단, n0 : 단말 노드 수, n1 : 차수 1인 노드 수, n2 : 차수 2인 노드 수, n : 노드 총 수, e : 간선 총 수)",
+    "options": [
+      {
+        "text": "n0 = n2 + 2",
+        "isCorrect": true
+      },
+      {
+        "text": "e = n1 + 2n2",
+        "isCorrect": false
+      },
+      {
+        "text": "n = e + 1",
+        "isCorrect": false
+      },
+      {
+        "text": "n = n0 + n1 + n2",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "- 단말 노드 : 이진 트리의 가장 아래에 존재하는 노드\n- 차수 1인 노드 : 자식 노드가 1개인 노드\n- 차수 2인 노드 : 자식 노드가 2개인 노드\n- 간선 : 노드끼리 이어진 선"
+  },
+  {
+    "templateId": "_n10db63g5",
+    "category": "소프트웨어 개발 모음",
+    "id": "a3",
+    "question": "화이트박스 테스트에 대한 설명으로 옳지 않은 것은?",
+    "options": [
+      {
+        "text": "제품의 내부 요소들이 명세서에 따라 수행되고 충분히 실행되는가를 보장하기 위한 검사이다.",
+        "isCorrect": false
+      },
+      {
+        "text": "모듈 안의 작동을 직접 관찰한다.",
+        "isCorrect": false
+      },
+      {
+        "text": "프로그램 원시 코드의 논리적인 구조를 커버하도록 테스트 케이스를 설계한다.",
+        "isCorrect": false
+      },
+      {
+        "text": "화이트박스 테스트 기법에는 기초 경로 검사, 동치 분할, 경계값 분석 등이 있다.",
+        "isCorrect": true
+      }
+    ],
+    "explanation": "- 화이트박스 테스트 기법에는 기초 경로 검사, 제어 구조 검사 등이 있습니다.\n- 동치 분할과 경계값 분석은 블랙박스 테스트 기법에 해당합니다."
+  },
+  {
+    "templateId": "_n10db63g5",
+    "category": "소프트웨어 개발 모음",
+    "id": "a4",
+    "question": "정형 기술 검토(FTR)에 대한 설명으로 옳지 않은 것은?",
+    "options": [
+      {
+        "text": "논쟁과 반박을 제한하지 않는다.",
+        "isCorrect": true
+      },
+      {
+        "text": "문제 영역을 명확히 표현한다.",
+        "isCorrect": false
+      },
+      {
+        "text": "참가자의 수를 제한한다.",
+        "isCorrect": false
+      },
+      {
+        "text": "의제를 제한한다.",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "정형 기술 검토(FTR: Formal Technical Review)\n- 가장 일반적인 검토 방법으로 소프트웨어 기술자들에 의해 수행되는 소프트웨어 품질 보증 활동이다.\n- 정형 기술 검토 유형에는 검토 회의(WalkThrough), 검열(Inspections) 등이 있으며 이는 모두 회의 형태로 수행된다.\n- 논쟁과 반박을 제한한다."
+  },
+  {
+    "templateId": "_n10db63g5",
+    "category": "소프트웨어 개발 모음",
+    "id": "a5",
+    "question": "다음 설명에 해당하는 것은?\n기존 소프트웨어를 분석하여 소프트웨어 개발 과정과 데이터 처리 과정을 설명하는 분석 및 설계 정보를 재발견하거나 다시 만들어내는 활동이다.",
+    "options": [
+      {
+        "text": "Analysis",
+        "isCorrect": false
+      },
+      {
+        "text": "Restructuring",
+        "isCorrect": false
+      },
+      {
+        "text": "Reverse Engineering",
+        "isCorrect": true
+      },
+      {
+        "text": "Migration",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "일반적인 개발 단계와는 반대로(Reverse), 기존 소프트웨어를 분석하여 새로운 정보를 재발견하거나 다시 만들어 내는 활동을 역공학(Reverse Engineering)이라고 합니다."
+  },
+  {
+    "templateId": "_n10db63g5",
+    "category": "소프트웨어 개발 모음",
+    "id": "a6",
+    "question": "ISO/IEC 25010의 소프트웨어 품질 특성 중 사용성(Usability)에 해당하지 않는 것은?",
+    "options": [
+      {
+        "text": "학습성",
+        "isCorrect": false
+      },
+      {
+        "text": "설치성",
+        "isCorrect": true
+      },
+      {
+        "text": "접근성",
+        "isCorrect": false
+      },
+      {
+        "text": "조작성",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "설치성은 소프트웨어 품질 특성 중 이식성(Portability)에 해당합니다."
+  },
+  {
+    "templateId": "_n10db63g5",
+    "category": "소프트웨어 개발 모음",
+    "id": "a7",
+    "question": "인터페이스 구현 검증 도구가 아닌 것은?",
+    "options": [
+      {
+        "text": "Foxbase",
+        "isCorrect": true
+      },
+      {
+        "text": "STAF",
+        "isCorrect": false
+      },
+      {
+        "text": "watir",
+        "isCorrect": false
+      },
+      {
+        "text": "xUnit",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "인터페이스 구현 검증 도구에는 xUnit, STAF, FitNesse, NTAF, Selenium, watir 등이 있습니다."
+  },
+  {
+    "templateId": "_n10db63g5",
+    "category": "소프트웨어 개발 모음",
+    "id": "a8",
+    "question": "소스 코드 품질 분석 도구 중 정적 분석 도구가 아닌 것은?",
+    "options": [
+      {
+        "text": "pmd",
+        "isCorrect": false
+      },
+      {
+        "text": "cppcheck",
+        "isCorrect": false
+      },
+      {
+        "text": "valMeter",
+        "isCorrect": true
+      },
+      {
+        "text": "checkstyle",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "소스 코드 품질 분석 도구는 정적 분석 도구와 동적 분석 도구로 나뉘며, 정적 분석 도구에는 pmd, cppcheck, SonarQube(쿠팡에서도 이것을 사용), checkstyle, ccm, cobertura 등이 있고, 동적 분석 도구에는 Avalanche, Valgrind 등이 있습니다."
+  },
+  {
+    "templateId": "_n10db63g5",
+    "category": "소프트웨어 개발 모음",
+    "id": "a9",
+    "question": "다음 설명이 의미하는 것은?\n-삽입과 삭제가 리스트의 양쪽 끝에서 발생할 수 있는 형태이다.\n-입력이 한쪽에서만 발생하고 출력은 양쪽에서 일어날 수 있는 입력 제한과, 입력은 양쪽에서 일어나고 출력은 한 곳에서만 이루어지는 출력 제한이 있다.",
+    "options": [
+      {
+        "text": "스택",
+        "isCorrect": false
+      },
+      {
+        "text": "큐",
+        "isCorrect": false
+      },
+      {
+        "text": "다중 스캑",
+        "isCorrect": false
+      },
+      {
+        "text": "데크",
+        "isCorrect": true
+      }
+    ],
+    "explanation": "- 스택(Stack) : 리스트의 한쪽 끝으로만 자료의 삽입, 삭제 작업이 이루오지는 자료구조\n- 큐(Queue) : 리스트의 한쪽에서는 삽입 작업이 이루어지고 다른 한쪽에서는 삭제 작업이 이루어지도록 구성한 자료 구조"
+  },
+  {
+    "templateId": "_n10db63g5",
+    "category": "소프트웨어 개발 모음",
+    "id": "a10",
+    "question": "검증 검사 기법 중 개발자의 장소에서 사용자가 개발자 앞에서 행하는 기법이며, 일반적으로 통제된 환경에서 사용자와 개발자가 함께 확인하면서 수행되는 검사는?",
+    "options": [
+      {
+        "text": "동치 분할 검사",
+        "isCorrect": false
+      },
+      {
+        "text": "형상 검사",
+        "isCorrect": false
+      },
+      {
+        "text": "알파 검사",
+        "isCorrect": true
+      },
+      {
+        "text": "베타 검사",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "문제에 제시된 내용은 알파 검사에 대한 설명입니다."
+  },
+  {
+    "templateId": "_n10db63g5",
+    "category": "소프트웨어 개발 모음",
+    "id": "a11",
+    "question": "알고리즘 시간 복잡도 O(1)이 의미하는 것은?",
+    "options": [
+      {
+        "text": "컴퓨터 처리가 불가",
+        "isCorrect": false
+      },
+      {
+        "text": "알고리즘 입력 데이터 수가 한 개",
+        "isCorrect": false
+      },
+      {
+        "text": "알고리즘 수행시간이 입력 데이터 수와 관계 없이 일정",
+        "isCorrect": true
+      },
+      {
+        "text": "알고리즘 길이가 입력 데이터보다 작음",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "O(1)은 빅오 표기법의 시간 복잡도를 표기하는 방법의 하나로, 입력 데이터 수에 관계없이 문제 해결에 하나의 단계만을 거친다는 것을 의미합니다."
+  },
+  {
+    "templateId": "_n10db63g5",
+    "category": "소프트웨어 개발 모음",
+    "id": "a12",
+    "question": "디지털 저작권 관리(DRM)의 기술 요소가 아닌 것은?",
+    "options": [
+      {
+        "text": "식별 기술",
+        "isCorrect": false
+      },
+      {
+        "text": "저작권 표현",
+        "isCorrect": false
+      },
+      {
+        "text": "복호화 기술",
+        "isCorrect": true
+      },
+      {
+        "text": "정책 관리 기술",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "디지털 저작권 관리(DRM)의 기술 요소에는 암호화, 키 관리, 암호화 파일 생성, 식별 기술, 저작권 표현, 정책 관리, 크랙 방지, 인증 등이 있습니다."
+  },
+  {
+    "templateId": "_n10db63g5",
+    "category": "소프트웨어 개발 모음",
+    "id": "a13",
+    "question": "화이트박스 테스트 기법에 해당하는 것은?",
+    "options": [
+      {
+        "text": "기초 경로 검사",
+        "isCorrect": true
+      },
+      {
+        "text": "동치 분할 검사",
+        "isCorrect": false
+      },
+      {
+        "text": "경계값 분석",
+        "isCorrect": false
+      },
+      {
+        "text": "원인 효과 그래프 검사",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "기초 경로 검사는 화이트박스 테스트 기법이고, 나머지는 블랙박스 테스트 기법에 해당합니다."
+  },
+  {
+    "templateId": "_n10db63g5",
+    "category": "소프트웨어 개발 모음",
+    "id": "a14",
+    "question": "다음과 같이 레코드가 구성되어 있을 떄, 이진 검색 방법으로 F를 찾을 경우 비교되는 횟수는?\nA B C D E F G H I J K L M N",
+    "options": [
+      {
+        "text": "4",
+        "isCorrect": true
+      },
+      {
+        "text": "5",
+        "isCorrect": false
+      },
+      {
+        "text": "6",
+        "isCorrect": false
+      },
+      {
+        "text": "7",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "이분 검색(이진 검색, Binary Search)\n- 전체 파일을 두 개의 서브파일로 분리해 가면서 Key 레코드를 검색하는 방법\n- 이분 검색은 반드시 순서화된 파일이어야 검색할 수 있다.\n- 찾고자 하는 Key 값을 파일의 중간 레코드 Key 값과 비교하면서 검색한다.\n- 중간 레코드 번호 M = (첫 번째 레코드 번호 + 마지막 레코드 번호) / 2"
+  },
+  {
+    "templateId": "_n10db63g5",
+    "category": "소프트웨어 개발 모음",
+    "id": "a15",
+    "question": "IDE(Integrated Development Environment) 도구의 각 기능에 대한 설명으로 틀린 것은?",
+    "options": [
+      {
+        "text": "Coding - 프로그래밍 언어를 가지고 컴퓨터 프로그램을 작성할 수 있는 환경을 제공",
+        "isCorrect": false
+      },
+      {
+        "text": "Compile - 저급 언어의 프로그램을 고급 언어 프로그램으로 변환하는 기능",
+        "isCorrect": true
+      },
+      {
+        "text": "Debugging - 프로그램에서 발견되는 버그를 찾아 수정할 수 있는 기능",
+        "isCorrect": false
+      },
+      {
+        "text": "Deployment - 소프트웨어를 최종 사용자에게 전달하기 위한 기능",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "컴파일(Compile)은 개발자가 작성한 고급 언어로 된 프로그램을 컴퓨터가 이해할 수 있는 목적 프로그램으로 번역하여 컴퓨터에서 실행 가능한 형태로 변환하는 기능입니다."
+  },
+  {
+    "templateId": "_n10db63g5",
+    "category": "소프트웨어 개발 모음",
+    "id": "a16",
+    "question": "소프트웨어 형상 관리의 의미로 적절한 것은?",
+    "options": [
+      {
+        "text": "비용에 관한 사항을 효율적으로 관리하는 것",
+        "isCorrect": false
+      },
+      {
+        "text": "개발 과정의 변경 사항을 관리하는 것",
+        "isCorrect": true
+      },
+      {
+        "text": "테스트 과정에서 소프트웨어를 통합하는 것",
+        "isCorrect": false
+      },
+      {
+        "text": "개발 인력을 관리하는 것",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "형상 관리는 소프트웨어의 개발 과정에서 소프트웨어의 변경 사항을 관리하기 위해 개발된 일련의 활동을 의미합니다."
+  },
+  {
+    "templateId": "_n10db63g5",
+    "category": "소프트웨어 개발 모음",
+    "id": "a17",
+    "question": "정렬된 N개의 데이터를 처리하는 데 O(NlogN)의 시간이 소요되는 정렬 알고리즘은?",
+    "options": [
+      {
+        "text": "합병 정렬",
+        "isCorrect": true
+      },
+      {
+        "text": "버블 정렬",
+        "isCorrect": false
+      },
+      {
+        "text": "선택 정렬",
+        "isCorrect": false
+      },
+      {
+        "text": "삽입 정렬",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "O(NlogN)의 시간 복잡도를 가진 정렬 알고리즘에는 힙 정렬과 2-Way 합병 정렬이 있습니다.\n- 버블 정렬, 선택 정렬, 삽입 정렬의 시간 복잡도는 O(n^2)입니다."
+  },
+  {
+    "templateId": "_n10db63g5",
+    "category": "소프트웨어 개발 모음",
+    "id": "a18",
+    "question": "자료 구조의 분류 중 선형 구조가 아닌 것은?",
+    "options": [
+      {
+        "text": "트리",
+        "isCorrect": true
+      },
+      {
+        "text": "리스트",
+        "isCorrect": false
+      },
+      {
+        "text": "스택",
+        "isCorrect": false
+      },
+      {
+        "text": "데크",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "- 선형 구조(Linear Structure) : 배열(Array), 선형 리스트(Linear List), 스택(Stack), 큐(Queue), 데크(Deque)\n- 비선형 구조(Non-Linear Structure) : 트리(Tree), 그래프(Graph)"
+  },
+  {
+    "templateId": "_n10db63g5",
+    "category": "소프트웨어 개발 모음",
+    "id": "a19",
+    "question": "스택에서 순서가 A, B, C, D로 정해진 입력 자료를, push -> push -> pop -> push -> push -> pop -> pop -> pop으로 연산 했을 때 출력은?",
+    "options": [
+      {
+        "text": "C, B,D, A",
+        "isCorrect": false
+      },
+      {
+        "text": "B, C, D, A",
+        "isCorrect": false
+      },
+      {
+        "text": "B, D, C, A",
+        "isCorrect": true
+      },
+      {
+        "text": "C, B, A, D",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "PUSH는 스택에 자료를 입력하는 명령이고, POP은 스택에서 자료를 출력하는 명령입니다."
+  },
+  {
+    "templateId": "_n10db63g5",
+    "category": "소프트웨어 개발 모음",
+    "id": "a20",
+    "question": "SQL의 기능에 따른 분류 중에서 REVOKE문과 같이 데이터의 사용 권한을 관리하는데 사용하는 언어는?",
+    "options": [
+      {
+        "text": "DDL(Data Definition Language)",
+        "isCorrect": false
+      },
+      {
+        "text": "DML(Data Manipulation Language)",
+        "isCorrect": false
+      },
+      {
+        "text": "DCL(Data Control Language)",
+        "isCorrect": true
+      },
+      {
+        "text": "DUL(Data User Language)",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "DCL(Data Control Language)은 데이터 관리를 목적으로 사용하는 언어로, 명령어에는 COMMIT, ROLLBACK, GRANT, REVOKE가 있습니다."
+  },
+  {
+    "templateId": "_n10db63g5",
+    "category": "소프트웨어 개발 모음",
+    "id": "a21",
+    "question": "데이터베이스의 트랜잭션 성질들 중에서 다음 설명에 해당하는 것은?\n-트랜잭션이 그 실행을 성공적으로 완료하면 언제나 일관성 있는 데이터베이스 상태로 변환한다.\n- 시스템이 가지고 있는 고정 요소는 트랜잭션 수행 전과 트랜잭션 수행 완료 후의 상태가 같아야 한다.",
+    "options": [
+      {
+        "text": "Atomicity",
+        "isCorrect": false
+      },
+      {
+        "text": "Consistency",
+        "isCorrect": true
+      },
+      {
+        "text": "Isolation",
+        "isCorrect": false
+      },
+      {
+        "text": "Durability",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "- Atomicity(원자성) : 트랜잭션의 연산은 데이터베이스에 모두 반영되도록 완료(Commit)되든지 아니면 전혀 반영되지 않도록 복구(Rollback)되어야 함\n- Isolation(독립성) : 둘 이상의 트랜잭션이 동시에 병행 실행되는 경우 어느 하나의 트랜잭션 실행 중에 다른 트랜잭션의 연산이 끼어들 수 없음\n- Durability(영속성) : 성공적으로 완료된 트랜잭션의 결과는 시스템이 고장나더라도 영구적으로 반영되어야 함\n- Consistency(일관성) : 시스템이 가지고 있는 고정 요소는 트랜잭션 수행 전과 트랜잭션 수행 완료 후의 상태가 같아야 함"
+  },
+  {
+    "templateId": "_n10db63g5",
+    "category": "소프트웨어 개발 모음",
+    "id": "a22",
+    "question": "다음 중 SQL에서의 DDL문이 아닌 것은?",
+    "options": [
+      {
+        "text": "CREATE",
+        "isCorrect": false
+      },
+      {
+        "text": "SELECT",
+        "isCorrect": true
+      },
+      {
+        "text": "ALTER",
+        "isCorrect": false
+      },
+      {
+        "text": "DROP",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "- DDL(데이터 정의어) : CREATE, ALTER, DROP\n- DML(데이터 조작어) : SELECT, UPDATE, INSERT, DELETE\n- DCL(데이터 제시어) : COMMIT, ROLLBACK, GRANT, REVOKE"
+  },
+  {
+    "templateId": "_n10db63g5",
+    "category": "소프트웨어 개발 모음",
+    "id": "a23",
+    "question": "정규화에 대한 설명으로 옳지 않은 것은?",
+    "options": [
+      {
+        "text": "정규화 하는 것은 테이블을 결합하여 종속성을 감소시키는 것이다.",
+        "isCorrect": true
+      },
+      {
+        "text": "제 2정규형은 반드시 제 1정규형을 만족해야 한다.",
+        "isCorrect": false
+      },
+      {
+        "text": "제 1정규형은 릴레이션에 속한 모든 도메인이 원자값 만으로 되어 있는 릴레이션이다.",
+        "isCorrect": false
+      },
+      {
+        "text": "BCNF는 강항 제 3정규형이라고도 한다.",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "정규화하는 것은 테이블을 결합하여 종속성을 감소시키는 것이 아니라 더 작은 테이블로 분해해 가면서 종속성을 제거하는 것입니다."
+  },
+  {
+    "templateId": "_n10db63g5",
+    "category": "소프트웨어 개발 모음",
+    "id": "a24",
+    "question": "SQL문에서 STUDENT(SNO, SNAME, YEAR, DEPT) 테이블에 학번 600, 성명 홍길동, 학년 2학년인 학생 튜플을 삽입하는 명령으로 옳은 것은?(단, SNO는 학번, SNAME은 성명, YEAR는 학년, DEPT는 학생, 교수 구분 필드임)",
+    "options": [
+      {
+        "text": "INSERT STUDENT INTO VALUES (600, '홍길동', 2);",
+        "isCorrect": false
+      },
+      {
+        "text": "INSERT FROM STUDENT VALUES (600, '홍길동', 2);",
+        "isCorrect": false
+      },
+      {
+        "text": "INSERT INTO STUDENT(SNO, SNAME, YEAR) VALUES (600, '홍길동', 2);",
+        "isCorrect": true
+      },
+      {
+        "text": "INSERT TO STUDENT(SNO, SNAME, YEAR) VALUES (600, '홍길동', 2);",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "삽입문의 문법은 'INSERT INTO 테이블명(속성명) VALUES(값)'입니다."
+  },
+  {
+    "templateId": "_n10db63g5",
+    "category": "소프트웨어 개발 모음",
+    "id": "a25",
+    "question": "SQL View(뷰)에 대한 설명으로 틀린 것은?",
+    "options": [
+      {
+        "text": "뷰(View)를 제거하고자 할 때는 DROP 문을 이용한다.",
+        "isCorrect": false
+      },
+      {
+        "text": "뷰(View)의 정의를 변경하고자 할 때는 ALTER 문을 이용한다.",
+        "isCorrect": true
+      },
+      {
+        "text": "뷰(View)를 생성하고자 할 때는 CREATE 문을 이용한다.",
+        "isCorrect": false
+      },
+      {
+        "text": "뷰(View)의 내용을 검색하고자 할 때는 SELECT 문을 이용한다.",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "- 한번 생성한 뷰는 정의를 변경할 수 없으므로 ALTER 문을 사용할 수 없습니다.\n- 뷰를 변경하려면 제거하고 다시 만들어야 합니다."
+  },
+  {
+    "templateId": "_n10db63g5",
+    "category": "소프트웨어 개발 모음",
+    "id": "a26",
+    "question": "트랜잭션의 상태 중 트랜잭션의 마지막 연산이 실행된 직후의 상태로, 모든 연산의 처리는 끝났지만 트랜잭션이 수행한 최종 결과를 데이터베이스에 반영하지 않은 상태는?",
+    "options": [
+      {
+        "text": "Active",
+        "isCorrect": false
+      },
+      {
+        "text": "Partially Committed",
+        "isCorrect": true
+      },
+      {
+        "text": "Committed",
+        "isCorrect": false
+      },
+      {
+        "text": "Aborted",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "- 활동(Active) : 트랜잭션이 실행 중인 상태\n- 실패(Failed) : 트랜잭션 실행에 오류가 발생하여 중단된 상태\n- 철회(Aborted) : 트랜잭션이 비정상적으로 종료되어 Rollback 연산을 수행한 상태\n- 부분 완료(Partially Committed) : 트랜잭션을 모두 성공적으로 실행한 후 Commit 연산이 실행되기 직전인 상태\n- 완료(Committed) : 트랜잭션을 모두 성공적으로 실행한 후 Commit 연산을 실행한 후의 상태"
+  },
+  {
+    "templateId": "_n10db63g5",
+    "category": "소프트웨어 개발 모음",
+    "id": "a27",
+    "question": "로킹 기법에서 2단계 로킹 규약에 대한 설명으로 옳은 것은?",
+    "options": [
+      {
+        "text": "트랜잭션은 Lock만 수행할 수 있고, Unlock은 수행할 수 없는 확장 단계가 있다.",
+        "isCorrect": true
+      },
+      {
+        "text": "트랜잭션이 Unlock과 Lock을 동시에 수행할 수 있는 단계를 병렬 전환 단계라 한다.",
+        "isCorrect": false
+      },
+      {
+        "text": "한 트랜잭션이 Unlock 후 다른 데이터 아이템을 Lock 할 수 있다.",
+        "isCorrect": false
+      },
+      {
+        "text": "교착상태를 일으키지 않는다.",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "- 2단계 로킹 규약은 새로운 Lock은 수행할 수 있지만 Unlock은 수행할 수 없는 확장 단계와 새로운 Unlock은 수행할 수 있지만 Lock은 수행할 수 없는 축소 단계가 있습니다.\n- 또한 2단계 로킹 규약은 직렬성을 보장하는 장점은 있지만 교착상태를 예방할 수 없다는 단점이 있습니다."
+  },
+  {
+    "templateId": "_n10db63g5",
+    "category": "소프트웨어 개발 모음",
+    "id": "a28",
+    "question": "다음 SQL문의 빈 칸에 들어갈 내용은?\nupdate 직원\n(      ) 급여 = 급여 * 1.1\nwhere 급여 <= 100000 or 입사일 < 19990101;",
+    "options": [
+      {
+        "text": "into",
+        "isCorrect": false
+      },
+      {
+        "text": "Set",
+        "isCorrect": true
+      },
+      {
+        "text": "from",
+        "isCorrect": false
+      },
+      {
+        "text": "Select",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "UPDATE문의 문법인 'UPDATE 테이블명 SET 속성명=데이터 WHERE 조건'에 따라 괄호에 들어갈 예약어는 SET입니다."
+  },
+  {
+    "templateId": "_n10db63g5",
+    "category": "소프트웨어 개발 모음",
+    "id": "a29",
+    "question": "다음 중 외래키에 대한 설명으로 옳은 것은?\n㉠ Null을 입력할 수 있다.\n㉡ 후보키 중 기본키를 제외한 나머지를 의미한다.\n㉢ 기본키의 일부가 외래키가 될 수 있다.\n㉣ 유일성과 최소성을 가진다.\n㉤ 참조 무결성과 관련이 있다.",
+    "options": [
+      {
+        "text": "㉠, ㉡",
+        "isCorrect": false
+      },
+      {
+        "text": "㉡, ㉤",
+        "isCorrect": false
+      },
+      {
+        "text": "㉢, ㉤",
+        "isCorrect": true
+      },
+      {
+        "text": "㉢, ㉣",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "㉠ 외래키에는 Null을 입력할 수 있습니다.\n㉡ 대체키에 대한 설명입니다.\n㉣ 외래키는 중복이 허용되므로 유일성과 최소성을 가질 수 없습니다."
+  },
+  {
+    "templateId": "_n10db63g5",
+    "category": "소프트웨어 개발 모음",
+    "id": "a30",
+    "question": "릴레이션의 특징으로 거리가 먼 것은?",
+    "options": [
+      {
+        "text": "모든 튜플은 서로 다른 값을 갖는다.",
+        "isCorrect": false
+      },
+      {
+        "text": "모든 속성 값은 원자 값이다.",
+        "isCorrect": false
+      },
+      {
+        "text": "튜플 사이에는 순서가 없다.",
+        "isCorrect": false
+      },
+      {
+        "text": "각 속성은 유일한 이름을 가지며, 속성의 순서는 큰 의미가 있다.",
+        "isCorrect": true
+      }
+    ],
+    "explanation": "릴레이션에서 각 속성은 유일한 이름을 가져야 하지만, 속성의 순서는 큰 의미가 없습니다."
+  },
+  {
+    "templateId": "_n10db63g5",
+    "category": "소프트웨어 개발 모음",
+    "id": "a31",
+    "question": "관계형 데이터베이스에서 다음 설명에 해당하는 키(Key)는?\n한 릴레이션 내의 속성들의 집합으로 구성된 키로서, 릴레이션을 구성하는 모든 튜플에 대한 유일성은 만족시키지만 최소성은 만족시키지 못한다.",
+    "options": [
+      {
+        "text": "후보키",
+        "isCorrect": false
+      },
+      {
+        "text": "대체키",
+        "isCorrect": false
+      },
+      {
+        "text": "슈퍼키",
+        "isCorrect": true
+      },
+      {
+        "text": "외래키",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "문제의 지문에 해당하는 키는 슈퍼키(Super Key)입니다."
+  },
+  {
+    "templateId": "_n10db63g5",
+    "category": "소프트웨어 개발 모음",
+    "id": "a32",
+    "question": "관계 해석(Relational Calculus)에 대한 설명으로 잘못된 것은?",
+    "options": [
+      {
+        "text": "튜플 관계 해석과 도메인 관계 해석이 있다.",
+        "isCorrect": false
+      },
+      {
+        "text": "기본적으로 관계 해석과 관계 대수는 관계 데이터베이스를 처리하는 기능과 능력면에서 동등하다.",
+        "isCorrect": false
+      },
+      {
+        "text": "수학의 Predicate Calculus에 기반을 두고 있다.",
+        "isCorrect": false
+      },
+      {
+        "text": "원하는 정보와 그 정보를 어떻게 유도하는가를 기술하는 절차적인 특성을 가진다.",
+        "isCorrect": true
+      }
+    ],
+    "explanation": "- '원하는 정보와 그 정보를 어떻게 유도하는가를 기술하는 절차적인 특성을 가진다.'는 관계대수에 대한 설명입니다.\n- 관계해석은 원하는 정보가 무엇이라는 것만 정의하는 비절차적 방법입니다."
+  },
+  {
+    "templateId": "_n10db63g5",
+    "category": "소프트웨어 개발 모음",
+    "id": "a33",
+    "question": "릴레이션 R의 차수(Degree)가 3, 카디널리티(Cardinality)가 3, 릴레이션 S의 차수가 4, 카디널리티가 4일 때, 두 릴레이션을 카티션 프로덕트(Cartesian Product)한 결과 릴레이션의 차수와 카디널리티는?",
+    "options": [
+      {
+        "text": "4, 4",
+        "isCorrect": false
+      },
+      {
+        "text": "7, 7",
+        "isCorrect": false
+      },
+      {
+        "text": "7, 12",
+        "isCorrect": true
+      },
+      {
+        "text": "12, 12",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "- 카티션 프로덕트(Cartesian Product), 즉 교차곱은 두 릴레이션의 차수(Degree, 속성의 수)는 더하고, 카디널리티(튜플의 수)는 곱하면 됩니다."
+  },
+  {
+    "templateId": "_n10db63g5",
+    "category": "소프트웨어 개발 모음",
+    "id": "a34",
+    "question": "다음 SQL문에서 사용된 BETWEEN 연산의 의미와 동일한 것은?\nSELECT *\nFROM 성적\nWHERE (점수 BETWEEN 90 AND 95) AND 학과 = '컴퓨터공학과';",
+    "options": [
+      {
+        "text": "점수 >= 90 AND 점수 <= 95",
+        "isCorrect": true
+      },
+      {
+        "text": "점수 > 90 AND 점수 < 95",
+        "isCorrect": false
+      },
+      {
+        "text": "점수 > 90 AND 점수 <= 95",
+        "isCorrect": false
+      },
+      {
+        "text": "점수 >= 90 AND 점수 < 95",
+        "isCorrect": false
+      }
+    ],
+    "explanation": ""
+  },
+  {
+    "templateId": "_n10db63g5",
+    "category": "소프트웨어 개발 모음",
+    "id": "a35",
+    "question": "개체-관계 모델(E-R Model)에 대한 설명으로 옳지 않은 것은?",
+    "options": [
+      {
+        "text": "특정 DBMS를 고려한 것은 아니다.",
+        "isCorrect": false
+      },
+      {
+        "text": "E-R 다이어그램에서 개체 타입은 사각형, 관계 타입은 타원, 속성은 다이아몬드로 나타낸다.",
+        "isCorrect": true
+      },
+      {
+        "text": "개체 타입과 관계 타입을 기본 개념으로 현실 세계를 개념적으로 표현하는 방법이다.",
+        "isCorrect": false
+      },
+      {
+        "text": "1976년 Peter Chen이 제안하였다.",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "E-R 다이어그램은 관계 타입은 마름모(=다이아몬드), 속성은 타원으로 나타냅니다."
+  },
+  {
+    "templateId": "_n10db63g5",
+    "category": "소프트웨어 개발 모음",
+    "id": "a36",
+    "question": "분산 데이터베이스의 특징에 대한 설명으로 틀린 것은?",
+    "options": [
+      {
+        "text": "지역 서버의 고유 데이터에 대한 작업은 중앙 서버의 통제 없이 자유롭게 수행할 수 있다.",
+        "isCorrect": false
+      },
+      {
+        "text": "새로운 지역 서버를 추가하거나 장비를 추가하는 등의 작업이 용이하다.",
+        "isCorrect": false
+      },
+      {
+        "text": "위치 투명성, 중복 투명성, 병행 투명성, 장애 투명성을 목표로 한다.",
+        "isCorrect": false
+      },
+      {
+        "text": "데이터베이스 설계 및 소프트웨어 개발이 쉽고, 전반적인 시스템의 성능이 향상된다.",
+        "isCorrect": true
+      }
+    ],
+    "explanation": "분산 데이터베이스는 데이터베이스 설계 및 소프트웨어 개발이 어렵습니다."
+  },
+  {
+    "templateId": "_n10db63g5",
+    "category": "소프트웨어 개발 모음",
+    "id": "a37",
+    "question": "정규화된 엔티티, 속성, 관계를 시스템의 성능 향상과 개발 운영의 단순화를 위해 중복, 통합, 분리 등을 수행하는 데이터 모델링 기법은?",
+    "options": [
+      {
+        "text": "인덱스정규화",
+        "isCorrect": false
+      },
+      {
+        "text": "반정규화",
+        "isCorrect": true
+      },
+      {
+        "text": "집단화",
+        "isCorrect": false
+      },
+      {
+        "text": "머징",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "시스템의 성능 향상과 개발 운영의 단순화를 위해 정규화된 데이터 모델을 통합, 중복, 분리하는 등 의도적으로 정규화 원칙을 위배하는 행위는 반정규화입니다."
+  },
+  {
+    "templateId": "_n10db63g5",
+    "category": "소프트웨어 개발 모음",
+    "id": "a38",
+    "question": "시스템 카탈로그에 관한 설명으로 틀린 것은?",
+    "options": [
+      {
+        "text": "시스템 카탈로그는 DBMS가 스스로 생성하고 유지하는 데이터베이스 내의 특별한 테이블들의 집합체이다.",
+        "isCorrect": false
+      },
+      {
+        "text": "일반 사용자들도 SQL을 이용하여 시스템 카탈로그를 직접 갱신할 수 있다.",
+        "isCorrect": true
+      },
+      {
+        "text": "데이터베이스 구조가 변경될 때마다 DBMS는 자동적으로 시스템 카탈로그 테이블들의 행을 삽입, 삭제, 수정한다.",
+        "isCorrect": false
+      },
+      {
+        "text": "시스템 카탈로그는 데이터베이스 구조에 관한 메타 데이터를 포함한다.",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "시스템 카탈로그 자체도 시스템 테이블로 구성되어 있어 일반 이용자도 SQL을 이용하여 내용을 검색해 볼 수 있지만 INSERT, DELETE, UPDATE문으로 카탈로그를 갱신하는 것은 허용되지 않습니다."
+  },
+  {
+    "templateId": "_n10db63g5",
+    "category": "소프트웨어 개발 모음",
+    "id": "a39",
+    "question": "커널의 버전을 확인할 때 사용하는 리눅스 명령어는?",
+    "options": [
+      {
+        "text": "ls",
+        "isCorrect": false
+      },
+      {
+        "text": "chmod",
+        "isCorrect": false
+      },
+      {
+        "text": "rm",
+        "isCorrect": false
+      },
+      {
+        "text": "uname",
+        "isCorrect": true
+      }
+    ],
+    "explanation": "리눅스에서 커널의 버전을 확인할 때 사용하는 명령어는 uname입니다."
+  },
+  {
+    "templateId": "_n10db63g5",
+    "category": "소프트웨어 개발 모음",
+    "id": "a40",
+    "question": "다음 C언어 프로그램의 결과로 옳은 것은?\n#include <stdio.h>\nmain() {\n    int a[10];\n    a[0] = 0;\n    a[1] = 1;\n    for (int i = 0; i < 8; i++)\n        a[i + 2] = a[i + 1] + a[i];\n    printf(\"%d\", a[9]);\n}",
+    "options": [
+      {
+        "text": "8",
+        "isCorrect": false
+      },
+      {
+        "text": "13",
+        "isCorrect": false
+      },
+      {
+        "text": "21",
+        "isCorrect": false
+      },
+      {
+        "text": "34",
+        "isCorrect": true
+      }
+    ],
+    "explanation": ""
+  },
+  {
+    "templateId": "_n10db63g5",
+    "category": "소프트웨어 개발 모음",
+    "id": "a41",
+    "question": "빈 기억공간의 크기가 20K, 16K, 8K, 40K일 때 기억장치 배치 전략으로 \"Worst Fit\"을 사용하여 17K의 프로그램을 적재할 경우 내부 단편화의 크기는?",
+    "options": [
+      {
+        "text": "3K",
+        "isCorrect": false
+      },
+      {
+        "text": "23K",
+        "isCorrect": true
+      },
+      {
+        "text": "44K",
+        "isCorrect": false
+      },
+      {
+        "text": "67K",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "- 최약 적합(Worst Fit)은 프로그램이나 데이터가 들어갈 수 있는 크기의 빈 영역 중에서 단편화를 가장 많이 남기는 분할 영역에 배치시키는 방법으로 17K의 프로그램은 40K의 빈 영약에 저장됩니다.\n- 내부 단편화는 40K - 17K = 23K가 됩니다."
+  },
+  {
+    "templateId": "_n10db63g5",
+    "category": "소프트웨어 개발 모음",
+    "id": "a42",
+    "question": "오류 제어에 사용되는 자동 반복 요청 방식(ARQ)이 아닌 것은?",
+    "options": [
+      {
+        "text": "Stop-and-wait ARQ",
+        "isCorrect": false
+      },
+      {
+        "text": "Go-back-N ARQ",
+        "isCorrect": false
+      },
+      {
+        "text": "Selective-Repeat ARQ",
+        "isCorrect": false
+      },
+      {
+        "text": "Non-Acknowledge ARQ",
+        "isCorrect": true
+      }
+    ],
+    "explanation": "- 자동 반복 요청 방식(ARQ) 중 Non-Acknowledge ARQ라는 방식은 없습니다.\n- 자동 반복 요청 방식의 오류 제어에는 Stop-and-Wait(정지-대기) ARQ, Go-Back-N ARQ, Selective-Repeat(선택적 재전송) ARQ, Adaptive(적응적) ARQ가 있습니다."
+  },
+  {
+    "templateId": "_n10db63g5",
+    "category": "소프트웨어 개발 모음",
+    "id": "a43",
+    "question": "다음 중 소프트웨어 개발 지원 도구에 대한 설명으로 옳지 않은 것은?",
+    "options": [
+      {
+        "text": "성능이나 편의성뿐만 아니라 범용성도 고려하여 개발 도구를 선정해야 한다.",
+        "isCorrect": false
+      },
+      {
+        "text": "IDE는 개발자가 편리하게 컴파일 및 디버깅할 수 있도록 지원하는 도구이다.",
+        "isCorrect": false
+      },
+      {
+        "text": "외부의 플러그인을 쉽게 검색하고 적용할 수 있는 IDE를 선정해야 한다.",
+        "isCorrect": false
+      },
+      {
+        "text": "코드 품질 및 인터페이스 검사 도구는 모든 코딩을 완료한 후에 실행하는 것이 좋다.",
+        "isCorrect": true
+      }
+    ],
+    "explanation": "코드 품질 테스트 및 인터페이스 검사 도구는 하나의 모듈이 완성될 때 마다 사용하는 것이 좋습니다."
+  },
+  {
+    "templateId": "_n10db63g5",
+    "category": "소프트웨어 개발 모음",
+    "id": "a44",
+    "question": "JAVA의 변수명 작성 규칙에 대한 설명으로 옳지 않은 것은?",
+    "options": [
+      {
+        "text": "변수명에 $를 사용할 수 있다.",
+        "isCorrect": false
+      },
+      {
+        "text": "첫 자리에 숫자를 사용할 수 있다.",
+        "isCorrect": true
+      },
+      {
+        "text": "예약어는 변수명으로 사용할 수 없다.",
+        "isCorrect": false
+      },
+      {
+        "text": "대 소문자를 구분한다.",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "변수 이름의 첫 자리에는 숫자를 사용할 수 없습니다."
+  },
+  {
+    "templateId": "_n10db63g5",
+    "category": "소프트웨어 개발 모음",
+    "id": "a45",
+    "question": "다음 C언어 프로그램의 결과로 옳은 것은?\n#include <stdio.h>\nmain() {\n    int r = 0;\n    do {\n        r = r + 1;\n    } while (r <= 0);\n    if (r == 1)\n        r++;\n    else\n        r = r + 3;\n    printf(\"%d\", r);\n}",
+    "options": [
+      {
+        "text": "1",
+        "isCorrect": false
+      },
+      {
+        "text": "2",
+        "isCorrect": true
+      },
+      {
+        "text": "3",
+        "isCorrect": false
+      },
+      {
+        "text": "4",
+        "isCorrect": false
+      }
+    ],
+    "explanation": ""
+  },
+  {
+    "templateId": "_n10db63g5",
+    "category": "소프트웨어 개발 모음",
+    "id": "a46",
+    "question": "다음 C언어 프로그램의 결과로 옳은 것은?\n#include <stdio.h>\nmain() {\n    int i = 0;\n    while (1) {\n        if (i == 4)\n            break;\n        i++;\n    }\n    printf(\"%d\", i);\n}",
+    "options": [
+      {
+        "text": "3",
+        "isCorrect": false
+      },
+      {
+        "text": "4",
+        "isCorrect": true
+      },
+      {
+        "text": "5",
+        "isCorrect": false
+      },
+      {
+        "text": "6",
+        "isCorrect": false
+      }
+    ],
+    "explanation": ""
+  },
+  {
+    "templateId": "_n10db63g5",
+    "category": "소프트웨어 개발 모음",
+    "id": "a47",
+    "question": "4개의 페이지를 수용할 수 있는 주기억장치가 있으며, 초기에는 모두 비어 있다고 가정한다. 다음의 순서로 페이지 참조가 발생할 때, FIFO 페이지 교체 알고리즘을 사용할 경우 페이지 결함의 발생 횟수는?\n페이지 참조 순서 : 0, 1, 2, 3, 0, 1, 4, 0, 1, 2, 3, 4",
+    "options": [
+      {
+        "text": "7회",
+        "isCorrect": false
+      },
+      {
+        "text": "8회",
+        "isCorrect": false
+      },
+      {
+        "text": "9회",
+        "isCorrect": false
+      },
+      {
+        "text": "10회",
+        "isCorrect": true
+      }
+    ],
+    "explanation": "0 -> [0] [-] [-] [-]\n1 -> [0] [1] [-] [-]\n2 -> [0] [1] [2] [-]\n3 -> [0] [1] [2] [3]\n4 -> [4] [1] [2] [3]\n0 -> [4] [0] [2] [3]\n1 -> [4] [0] [1] [3]\n2 -> [4] [0] [1] [2]\n3 -> [3] [0] [1] [2]\n4 -> [3] [4] [1] [2]"
+  },
+  {
+    "templateId": "_n10db63g5",
+    "category": "소프트웨어 개발 모음",
+    "id": "a48",
+    "question": "TCP에 대한 설명으로 옳지 않은 것은?",
+    "options": [
+      {
+        "text": "프레임을 전송 단위로 사용한다.",
+        "isCorrect": true
+      },
+      {
+        "text": "요청과 응답을 동시에 주고 받는 전이중 연결 방식을 사용한다.",
+        "isCorrect": false
+      },
+      {
+        "text": "순서 제어, 오류 제어, 흐름 제어 기능을 제공한다.",
+        "isCorrect": false
+      },
+      {
+        "text": "투명성이 보장되는 통신을 제공한다.",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "TCP 프로토콜은 패킷 단위의 스트림(Stream) 전송 기능을 제공합니다."
+  },
+  {
+    "templateId": "_n10db63g5",
+    "category": "소프트웨어 개발 모음",
+    "id": "a49",
+    "question": "동일한 네트워크에 있는 목적지 호스트로 IP 패킷을 직접 전달할 수 있도록 IP 주소를 MAC 주소로 변환하는 프로토콜은?",
+    "options": [
+      {
+        "text": "ARP(Address Resolution Protocol)",
+        "isCorrect": true
+      },
+      {
+        "text": "ICMP(Internet Control Message Protocol)",
+        "isCorrect": false
+      },
+      {
+        "text": "IGMP(Internet Group Management Protocol)",
+        "isCorrect": false
+      },
+      {
+        "text": "SNMP(Simple Network Management Protocol)",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "- ICMP(Internet Control Message Protocol, 인터넷 제어 메시지 프로토콜) : IP와 조합하여 통신중에 발생하는 오류의 처리와 전송 경로 변경 등을 위한 제어 메시지를 관리하는 역할을 하며, 헤더는 8Byte로 구성됨\n- IGMP(Internet Group Management Protocol, 인터넷 그룹 관리 프로토콜) : 멀티케스트를 지원하는 호스트나 라우터 사이에서 멀티캐스트 그룹 유지를 위해 사용됨\n- SNMP(Simple Network Management Protocol) : TCP/IP의 네트워크 관리 프로토콜로, 라우터나 허브 등 네트워크 기기의 네트워크 정보를 네트워크 관리 시스템에 보내는데 사용되는 표준 통신 규약"
+  },
+  {
+    "templateId": "_n10db63g5",
+    "category": "소프트웨어 개발 모음",
+    "id": "a50",
+    "question": "다음 중 IP 주소 체계에 대한 설명으로 옳지 않은 것은?",
+    "options": [
+      {
+        "text": "IPv6의 패킷 헤더는 32 octet의 고정된 길이를 가진다.",
+        "isCorrect": true
+      },
+      {
+        "text": "IPv6는 주소 자동설정(Auto Configuration) 기능을 통해 손쉽게 이용자의 단말을 네트워크에 접속시킬 수 있다.",
+        "isCorrect": false
+      },
+      {
+        "text": "IPv4는 호스트 주소를 자동으로 설정하며 유니캐스트(Unicast)를 지원한다.",
+        "isCorrect": false
+      },
+      {
+        "text": "IPv4는 클래스별로 네트워크와 호스트 주소의 길이가 다르다.",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "IPv6의 패킷 헤더는 40옥텟(octet)의 고정된 길이를 갖습니다."
+  },
+  {
+    "templateId": "_n10db63g5",
+    "category": "소프트웨어 개발 모음",
+    "id": "a51",
+    "question": "다음 C언어 프로그램의 결과로 옳은 것은?\n#include <stdio.h>\nmain() {\n    char c = 'A';\n    c = c + 1;\n    printf(\"%d\", c);\n}",
+    "options": [
+      {
+        "text": "A",
+        "isCorrect": false
+      },
+      {
+        "text": "B",
+        "isCorrect": false
+      },
+      {
+        "text": "65",
+        "isCorrect": false
+      },
+      {
+        "text": "66",
+        "isCorrect": true
+      }
+    ],
+    "explanation": "문자는 아스키코드로 저장됩니다. 대문자 'A'는 아스키코드로 65이고, 1을 더하면 66이므로 대문자 'B'가 됩니다. 하지만 출력문에서 출력 형식이 문자를 출력하는 %c가 아닌 정수를 출력하는 %d를 사용했으므로 대문자 'B'가 아닌 아스크코드 값 66이 출력되게 됩니다."
+  },
+  {
+    "templateId": "_n10db63g5",
+    "category": "소프트웨어 개발 모음",
+    "id": "a52",
+    "question": "다음 JAVA 프로그램의 결과로 옳은 것은?\npublic class Test {\n    public static void main(String[] args) {\n        int r = 4 | 7;\n        System.out.print(r);\n    }\n}",
+    "options": [
+      {
+        "text": "0",
+        "isCorrect": false
+      },
+      {
+        "text": "2",
+        "isCorrect": false
+      },
+      {
+        "text": "4",
+        "isCorrect": false
+      },
+      {
+        "text": "7",
+        "isCorrect": true
+      }
+    ],
+    "explanation": "비트 연산자 |(OR)을 사용하여 4와 7의 비트 단위 OR 연산을 수행합니다. 4는 0100(2)이고, 7은 0111(2)입니다. 이 둘을 OR 연산하면 0111(2) 즉 7이 됩니다."
+  },
+  {
+    "templateId": "_n10db63g5",
+    "category": "소프트웨어 개발 모음",
+    "id": "a53",
+    "question": "다음 JAVA 프로그램의 결과로 옳은 것은?\npublic class Test {\n    public static void main(String[] args) {\n        try {\n            int a = 32, b = 0;\n            double c = a / b;\n            System.out.print('A');\n        }\n        catch (ArithmeticException e) {\n            System.out.print('A');\n        }\n        catch (NumberFormatException e) {\n            System.out.print('C');\n        }\n        catch (Exception e) {\n            System.out.print('D');\n        }\n    }\n}",
+    "options": [
+      {
+        "text": "A",
+        "isCorrect": false
+      },
+      {
+        "text": "B",
+        "isCorrect": true
+      },
+      {
+        "text": "C",
+        "isCorrect": false
+      },
+      {
+        "text": "D",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "- 프로그램 실행 시 32를 0으로 나누는 연산이 발생하여 ArithmeticException이 발생합니다.\n- 따라서 첫 번째 catch 블록이 실행되어 'B'가 출력됩니다."
+  },
+  {
+    "templateId": "_n10db63g5",
+    "category": "소프트웨어 개발 모음",
+    "id": "a54",
+    "question": "C언어에서 비트 논리 연산자에 해당하지 않는 것은?",
+    "options": [
+      {
+        "text": "^",
+        "isCorrect": false
+      },
+      {
+        "text": "?",
+        "isCorrect": true
+      },
+      {
+        "text": "&",
+        "isCorrect": false
+      },
+      {
+        "text": "~",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "C언어의 비트 연산자에는 &, ^, |, ~, <<, >>가 있습니다."
+  },
+  {
+    "templateId": "_n10db63g5",
+    "category": "소프트웨어 개발 모음",
+    "id": "a55",
+    "question": "자바에서 두 개의 논리 값을 연산하여 하나라도 참(true)이면 참을 반환하고, 둘 모두 거짓(false)이어야 거짓을 반환하는 연산을 수행하는 연산자는?",
+    "options": [
+      {
+        "text": "==",
+        "isCorrect": false
+      },
+      {
+        "text": "&&",
+        "isCorrect": false
+      },
+      {
+        "text": "||",
+        "isCorrect": true
+      },
+      {
+        "text": "+=",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "하나라도 참이면 참을 반환하고, 둘 모두 거짓이어야 거짓을 반환하는 논리 연산자는 ||(논리 OR)입니다."
+  },
+  {
+    "templateId": "_n10db63g5",
+    "category": "소프트웨어 개발 모음",
+    "id": "a56",
+    "question": "다음 Python 프로그램의 실행 결과가 [실행결과]와 같을 때, 빈칸에 적합한 것은?\nx = 20\nif x == 10:\n    print('10')\n(    ) x == 20;\n    print('20')\nelse:\n    print('other')\n\n[실행결과]\n20",
+    "options": [
+      {
+        "text": "either",
+        "isCorrect": false
+      },
+      {
+        "text": "elif",
+        "isCorrect": true
+      },
+      {
+        "text": "else if",
+        "isCorrect": false
+      },
+      {
+        "text": "else",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Python에서 if문에 조건을 추가할 때 사용하는 예약어는 elif입니다."
+  },
+  {
+    "templateId": "_n10db63g5",
+    "category": "소프트웨어 개발 모음",
+    "id": "a57",
+    "question": "Python 데이터 타입 중 시퀀스(Sequence) 데이터 타입에 해당하며 다양한 데이터 타입들을 주어진 순서에 따라 저장할 수 있으나 저장된 내용을 변경할 수 없는 것은?",
+    "options": [
+      {
+        "text": "복소수(complex) 타입",
+        "isCorrect": false
+      },
+      {
+        "text": "리스트(list) 타입",
+        "isCorrect": false
+      },
+      {
+        "text": "사전(dict) 타입",
+        "isCorrect": false
+      },
+      {
+        "text": "튜플(tuple) 타입",
+        "isCorrect": true
+      }
+    ],
+    "explanation": "저장된 내용을 변경할 수 없는 순차형 데이터 타입은 튜플(Tuple)입니다."
+  },
+  {
+    "templateId": "_n10db63g5",
+    "category": "소프트웨어 개발 모음",
+    "id": "a58",
+    "question": "OSI 7계층 중 다음 설명에 해당하는 계층은?\n- 개방 시스템들 간의 네트워크 연결을 관리하는 기능과 데이터의 교환 및 중계 기능을 함\n- 네트워크 연결을 설정, 유지, 해제하는 기능을 함",
+    "options": [
+      {
+        "text": "데이터 링크 계층",
+        "isCorrect": false
+      },
+      {
+        "text": "네트워크 계층",
+        "isCorrect": true
+      },
+      {
+        "text": "전송 계층",
+        "isCorrect": false
+      },
+      {
+        "text": "표현 계층",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "네트워크 연결의 설정, 유지, 해제와 같은 네트워크 관리는 네트워크 계층의 기능입니다."
+  },
+  {
+    "templateId": "_n10db63g5",
+    "category": "소프트웨어 개발 모음",
+    "id": "a59",
+    "question": "소프트웨어 개발 모델 중 다음과 같은 과정으로 호라동을 수행하는 모델은?\n계획 수립 -> 위험 분석 -> 개발 및 검증 -> 고객 평가",
+    "options": [
+      {
+        "text": "Spiral Model",
+        "isCorrect": true
+      },
+      {
+        "text": "Agile Model",
+        "isCorrect": false
+      },
+      {
+        "text": "Prototype Model",
+        "isCorrect": false
+      },
+      {
+        "text": "Waterfall Model",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "나선형 모형(Spiral Model, 점진적 모형)\n- 보헴(Boehm)이 제안한 것으로, 폭포수 모형과 프로토타입 모형의 장점에 위험 분석 기능을 추가한 모형이다."
+  },
+  {
+    "templateId": "_n10db63g5",
+    "category": "소프트웨어 개발 모음",
+    "id": "a60",
+    "question": "다음 내용이 설명하는 스토리지 시스템은?\n- 하드디스크와 같은 데이터 저장장치를 호스트버스 어댑터에 직접 연결하는 방식\n- 저장장치와 호스트 기기 사이에 네트워크 디바이스 없이 직접 연결하는 방식으로 구성",
+    "options": [
+      {
+        "text": "DAS",
+        "isCorrect": true
+      },
+      {
+        "text": "NAS",
+        "isCorrect": false
+      },
+      {
+        "text": "SAN",
+        "isCorrect": false
+      },
+      {
+        "text": "NFC",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "다이렉트 연결 스토리지(DAS, Direct Attached Storage)\n- 하드디스크와 같은 데이터 저장장치를 호스트버스 어댑터에 직접 연결하는 방식\n- 저장장치와 호스트 기기 사이에 네트워크 디바이스 없이 직접 연결하는 방식으로 구성"
+  },
+  {
+    "templateId": "_n10db63g5",
+    "category": "소프트웨어 개발 모음",
+    "id": "a61",
+    "question": "소프트웨어 재공학의 주요 호라동 중 기존 소프트웨어를 다른 운영체제나 하드웨어 환경에서 사용할 수 있도록 변환하는 것은?",
+    "options": [
+      {
+        "text": "역공학",
+        "isCorrect": false
+      },
+      {
+        "text": "분석",
+        "isCorrect": false
+      },
+      {
+        "text": "재구성",
+        "isCorrect": false
+      },
+      {
+        "text": "이식",
+        "isCorrect": true
+      }
+    ],
+    "explanation": "분석(Analysis) : 기존 소프트웨어의 구조와 기능을 분석하여 문서화하는 활동\n역공학(Reverse Engineering) : 기존 소프트웨어를 분석하여 상위 수준의 추상화된 표현으로 변환하는 활동\n재구성(Reconstruction) : 기존 소프트웨어의 구조를 개선하기 위해 코드나 설계를 변경하는 활동\n이식(Porting) : 기존 소프트웨어를 다른 운영체제나 하드웨어 환경에서 사용할 수 있도록 변환하는 활동"
+  },
+  {
+    "templateId": "_n10db63g5",
+    "category": "소프트웨어 개발 모음",
+    "id": "a62",
+    "question": "다음 설명에 해당하는 소프트웨어는?\n- 개발해야 할 애플리케이션의 일부분이 이미 내장된 클래스 라이브러리로 구현이 되어 있다.\n- 따라서, 그 기반이 되는 이미 존재하는 부분을 확장 및 이용하는 것으로 볼 수 있다.\n- JAVA 기반의 대표적인 소프트웨어로는 스프링(Spring)이 있다.",
+    "options": [
+      {
+        "text": "전역 함수 라이브러리",
+        "isCorrect": false
+      },
+      {
+        "text": "소프트웨어 개발 프레임워크",
+        "isCorrect": true
+      },
+      {
+        "text": "컨테이너 아키텍처",
+        "isCorrect": false
+      },
+      {
+        "text": "어휘 분석기",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "전역 함수 라이브러리 : 여러 프로그램에서 공통적으로 사용되는 함수들을 모아 놓은 라이브러리\n소프트웨어 개발 프레임워크 : 애플리케이션 개발을 위한 기본 구조와 기능을 제공하는 소프트웨어 플랫폼\n컨테이너 아키텍처 : 애플리케이션을 실행하기 위한 환경을 제공하는 아키텍처\n어휘 분석기 : 소스 코드를 토큰 단위로 분해하는 프로그램"
+  },
+  {
+    "templateId": "_n10db63g5",
+    "category": "소프트웨어 개발 모음",
+    "id": "a63",
+    "question": "기존 무선 랜의 한계 극복을 위해 등장하였으며, 대규모 디바이스의 네트워크 생성에 최적화되어 차세대 이동통신, 홈 네트워킹, 공공 안전 등의 특수목적에 사용되는 새로운 방식의 네트워크 기술을 의미하는 것은?",
+    "options": [
+      {
+        "text": "Software Defined Perimeter",
+        "isCorrect": false
+      },
+      {
+        "text": "Virtural Private Network",
+        "isCorrect": false
+      },
+      {
+        "text": "Local Area Network",
+        "isCorrect": false
+      },
+      {
+        "text": "Mesh Network",
+        "isCorrect": true
+      }
+    ],
+    "explanation": "Software Defined Perimeter : 네트워크 접근 제어를 위한 보안 프레임워크\nVirtual Private Network : 공용 네트워크를 통해 사설 네트워크를 구축하는 기술\nLocal Area Network : 제한된 지역 내에서 컴퓨터와 기타 장치를 연결하는 네트워크\nMesh Network : 대규모 디바이스의 네트워크 생성에 최적화된 새로운 방식의 네트워크 기술"
+  },
+  {
+    "templateId": "_n10db63g5",
+    "category": "소프트웨어 개발 모음",
+    "id": "a64",
+    "question": "판매 계획 또는 배포 계획은 발표되었으나 실제로 고객에게 판매되거나 배포되지 않고 있는 소프트웨어는?",
+    "options": [
+      {
+        "text": "Grayware",
+        "isCorrect": false
+      },
+      {
+        "text": "Vaporware",
+        "isCorrect": true
+      },
+      {
+        "text": "Shareware",
+        "isCorrect": false
+      },
+      {
+        "text": "Freeware",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Grayware : 사용자에게 불편을 주거나 시스템 성능에 영향을 미칠 수 있는 소프트웨어\nVaporware : 개발이 발표되었으나 실제로 존재하지 않거나 배포되지 않은 소프트웨어\nShareware : 일정 기간 동안 무료로 사용해 볼 수 있는 소프트웨어\nFreeware : 무료로 제공되는 소프트웨어"
+  },
+  {
+    "templateId": "_n10db63g5",
+    "category": "소프트웨어 개발 모음",
+    "id": "a64",
+    "question": "다음 내용이 설명하는 것은?\n- 블록체인(Blockchain) 개발환경을 클라우드로 서비스하는 개념\n- 블록체인 네트워크에 노드의 추가 및 제거가 용이\n- 블록체인의 기본 인프라를 추상화하여 블록체인 응용 프로그램을 만들 수 있는 클라우드 컴퓨팅 플랫폼",
+    "options": [
+      {
+        "text": "OTT",
+        "isCorrect": false
+      },
+      {
+        "text": "BaaS",
+        "isCorrect": true
+      },
+      {
+        "text": "SDDC",
+        "isCorrect": false
+      },
+      {
+        "text": "Wi-SUN",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "OTT : 인터넷을 통해 제공되는 다양한 미디어 콘텐츠 서비스\nBaaS : 블록체인 개발환경을 클라우드로 서비스하는 개념\nSDDC : 소프트웨어 정의 데이터 센터, 가상화 기술을 활용하여 데이터 센터의 모든 자원을 소프트웨어로 관리하는 개념\nWi-SUN : 무선 스마트 유틸리티 네트워크, 저전력 광역 네트워크 기술"
+  },
+  {
+    "templateId": "_n10db63g5",
+    "category": "소프트웨어 개발 모음",
+    "id": "a65",
+    "question": "정보 시스템과 관련한 다음 설명에 해당하는 것은?\n- 각 시스템 간에 공유 디스크를 중심으로 클러스터링으로 엮어 다수의 시스템을 동시에 연결할 수 있다.\n- 조직, 기업의 기간 업무 서버 안정성을 높이기 위해 사용될 수 있다.\n- 여러 가지 방식으로 구현되며 2개의 서버를 연결하는 것으로 2개의 시스템이 각각 업무를 수행하도록 구현하는 방식이 널리 사용된다.",
+    "options": [
+      {
+        "text": "고가용성 솔루션(HACMP)",
+        "isCorrect": true
+      },
+      {
+        "text": "점대점 연결 방식(Point-to-Point Mode)",
+        "isCorrect": false
+      },
+      {
+        "text": "스턱스넷(Stuxnet)",
+        "isCorrect": false
+      },
+      {
+        "text": "루팅(Rooting)",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "고가용성 솔루션(HACMP) : 고가용성 클러스터링 솔루션으로, 시스템의 가용성을 높이기 위해 여러 대의 서버를 클러스터링하여 운영하는 기술\n점대점 연결 방식(Point-to-Point Mode) : 두 개의 시스템이 직접 연결되어 데이터를 주고받는 방식\n스턱스넷(Stuxnet) : 산업 제어 시스템을 대상으로 한 악성 코드\n루팅(Rooting) : 모바일 기기에서 관리자 권한을 획득하는 행위"
+  },
+  {
+    "templateId": "_n10db63g5",
+    "category": "소프트웨어 개발 모음",
+    "id": "a66",
+    "question": "빅데이터 분석 기술 중 대량의 데이터를 분석하여 데이터 속에 내재되어 있는 변수 사이의 상호관계를 규명하여 일정한 패턴을 찾아내는 기법은?",
+    "options": [
+      {
+        "text": "Data Mining",
+        "isCorrect": true
+      },
+      {
+        "text": "WM-Bus",
+        "isCorrect": false
+      },
+      {
+        "text": "Digital Twin",
+        "isCorrect": false
+      },
+      {
+        "text": "Zigbee",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Data Mining : 대량의 데이터에서 유용한 정보를 추출하는 기법\nWM-Bus : 무선 미터 버스, 스마트 미터링을 위한 무선 통신 규격\nDigital Twin : 물리적 객체나 시스템의 디지털 복제본을 생성하여 시뮬레이션하는 기술\nZigbee : 저전력, 저속 무선 통신을 위한 프로토콜"
+  },
+  {
+    "templateId": "_n10db63g5",
+    "category": "소프트웨어 개발 모음",
+    "id": "a67",
+    "question": "Secure 코딩에서 입력 데이터의 보안 약점과 관련한 설명으로 틀린 것은?",
+    "options": [
+      {
+        "text": "SQL 삽입 : 사용자의 입력 값 등 외부 입력 값이 SQL 쿼리에 삽입되어 공격", 
+        "isCorrect": false
+      },
+      {
+        "text": "크로스사이트 스크립트 : 검증되지 않은 외부 입력 값에 의해 브라우저에서 악의적인 코드가 실행",
+        "isCorrect": false
+      },
+      {
+        "text": "운영체제 명령어 삽입 : 운영체제 명령어 파라미터 입력 값이 적절한 사전검증을 거치지 않고 사용되어 공격자가 운영체제 명령어를 조작",
+        "isCorrect": false
+      },
+      {
+        "text": "자원 삽입 : 사용자가 내부 입력 값을 통해 시스템 내에 사용이 불가능한 자원을 지속적으로 입력함으로써 시스템에 과부하 발생",
+        "isCorrect": true
+      }
+    ],
+    "explanation": "경로 조작 및 자원 삽입은 데이터 입출력 경로를 조작하여 서버 자원을 수정 및 삭제할 수 있는 보안 약점입니다."
+  },
+  {
+    "templateId": "_n10db63g5",
+    "category": "소프트웨어 개발 모음",
+    "id": "a68",
+    "question": "다음 설명에서 괄호(㉠,㉡)에 들어갈 알맞은 암호화 알고리즘은?\n- ( ㉠ ) : 이산 대수 문제를 타원곡선으로 옳겨 기밀성과 효율성을 높인 암호화 알고리즘\n- ( ㉡ ) : 소인수 분해의 어려움에 안전성의 근거를 둔 암호화 알고리즘",
+    "options": [
+      {
+        "text": "㉠ : ECC, ㉡ : Rabin",
+        "isCorrect": true
+      },
+      {
+        "text": "㉠ : DES, ㉡ : Rabin",
+        "isCorrect": false
+      },
+      {
+        "text": "㉠ : ECC, ㉡ : SHA",
+        "isCorrect": false
+      },
+      {
+        "text": "㉠ : DES, ㉡ : SHA",
+        "isCorrect": false
+      }
+    ],
+    "explanation": ""
+  },
+  {
+    "templateId": "_n10db63g5",
+    "category": "소프트웨어 개발 모음",
+    "id": "a69",
+    "question": "블록 암호화 방식과 해시 암호화 방식을 나열한 것이다. 다음 중 유형이 다른 하나는?",
+    "options": [
+      {
+        "text": "DES",
+        "isCorrect": true
+      },
+      {
+        "text": "SNEFRU",
+        "isCorrect": false
+      },
+      {
+        "text": "MD5",
+        "isCorrect": false
+      },
+      {
+        "text": "SHA",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "DES는 1975년 미국 NBS에서 발표한 개인키 암호화 알고리즘으로, 해시 암호화 방식과 관계가 없습니다.\n- SNEFRU : 1990년 R.C.Merkle가 발표한 해시 함수\n- MD5 : 1991년 R.Rivest가 MD4를 대체하기 위해 고안한 암호화 해시 함수\n- SHA : 1993년 미국 국가안보국(NSA)이 처음 설계한 해시 함수 시리즈"
+  },
+  {
+    "templateId": "_n10db63g5",
+    "category": "소프트웨어 개발 모음",
+    "id": "a70",
+    "question": "다음 중 서비스 거부 공격의 유형에 해당하지 않는 것은?",
+    "options": [
+      {
+        "text": "Ping of Death",
+        "isCorrect": false
+      },
+      {
+        "text": "SYN Flooding",
+        "isCorrect": false
+      },
+      {
+        "text": "Land",
+        "isCorrect": false
+      },
+      {
+        "text": "Memory Hacking",
+        "isCorrect": true
+      }
+    ],
+    "explanation": "Memory Hacking은 컴퓨터 메모리(주기억장치)에 있는 데이터를 위조 변조하는 해킹 방법으로, 서비스 거부 공격의 유형이 아닙니다."
+  },
+  {
+    "templateId": "_n10db63g5",
+    "category": "소프트웨어 개발 모음",
+    "id": "a71",
+    "question": "다음이 설명하는 서비스 공격 유형은?\n공격자가 가상의 클라이언트로 위장하여 3-way-handshake 과정을 의도적으로 중단시킴으로써 공격 대상자인 서버가 대기 상태에 놓여 정상적인 서비스를 수행하지 못하게 하는 공격 방법이다.",
+    "options": [
+      {
+        "text": "SYN Flooding",
+        "isCorrect": true
+      },
+      {
+        "text": "SMURFING",
+        "isCorrect": false
+      },
+      {
+        "text": "Land",
+        "isCorrect": false
+      },
+      {
+        "text": "TearDrop",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "- SMURFING : IP나 ICMP의 특성을 악용하여 엄청난 양의 데이터를 한 사이트에 집중적으로 보냄으로써 네트워크를 불능 상태로 만드는 공격 방법\n- Land : 패킷을 전송할 때 송신 IP 주소와 수신 IP 주소를 모두 공격 대상의 IP 주소로 하여 공격 대상에게 전송하는 것으로, 이 패킷을 받은 공격 대상은 송신 IP 주소가 자신이므로 자신에게 응답을 수행하게 되는데, 이러한 패킷이 계속해서 전송될 경우 자신에 대해 무한히 응답하게 하는 공격임\n- TearDrop : Fragment Offset 값을 변경시켜 수신 측에서 패킷을 재조합할 때 오류로 인한 과부하를 발생시킴으로써 시스템이 다운되도록 하는 공격 방법"
+  },
+  {
+    "templateId": "_n10db63g5",
+    "category": "소프트웨어 개발 모음",
+    "id": "a72",
+    "question": "백도어 탐지 방법으로 틀린 것은?",
+    "options": [
+      {
+        "text": "무결성 검사",
+        "isCorrect": false
+      },
+      {
+        "text": "닫힌 포트 확인",
+        "isCorrect": true
+      },
+      {
+        "text": "로그 분석",
+        "isCorrect": false
+      },
+      {
+        "text": "SetUID 파일 검사",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "백도어 탐지 방법 중 하나는 닫힌 포트 확인이 아니라 열린 포트 확인입니다."
+  },
+  {
+    "templateId": "_n10db63g5",
+    "category": "소프트웨어 개발 모음",
+    "id": "a73",
+    "question": "인증의 유형 중에서 패스워드를 사용하는 경우에 해당하는 인증 유형은?",
+    "options": [
+      {
+        "text": "Something You Have",
+        "isCorrect": false
+      },
+      {
+        "text": "Something You Are",
+        "isCorrect": false
+      },
+      {
+        "text": "Something You Know",
+        "isCorrect": true
+      },
+      {
+        "text": "Somewhere You Are",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "- Something You Have : 신분증, 메모리 카드, OTP 등 사용자가 소유하고 있는 것을 기반으로 인증을 수행하는 것\n- Something You Are : 지문, 홍채, 얼굴 등 사용자의 고유한 생체 정보를 기반으로 인증을 수행하는 것\n- Somewhere You Are : 콜백, GPS, IP 주소 등 인증을 시도하는 위치의 적절성을 확인하는 것"
+  },
+  {
+    "templateId": "_n10db63g5",
+    "category": "소프트웨어 개발 모음",
+    "id": "a74",
+    "question": "취약점 관리를 위한 응용 프로그램의 보안 설정과 가장 거리가 먼 것은?",
+    "options": [
+      {
+        "text": "서버 관리실 출입 통제",
+        "isCorrect": true
+      },
+      {
+        "text": "실행 프로세스 권한 설정",
+        "isCorrect": false
+      },
+      {
+        "text": "운영체제의 접근 제한",
+        "isCorrect": false
+      },
+      {
+        "text": "운영체제의 정보 수집 제한",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "- 서버 관리실 출입 통제는 물리적 보안에 포함되는 보안 조치입니다.\n- 응용 프로그램과 관련된 보안은 물리적 보안이 아닌 기술적 보안입니다."
+  },
+  {
+    "templateId": "_n10db63g5",
+    "category": "소프트웨어 개발 모음",
+    "id": "a75",
+    "question": "다음 내용이 설명하는 것은?\n- 인트라넷이나 인터넷에서 서버의 파일 및 프린터를 사용할 수 있는 프리웨어 프로그램이다.\n- 리눅스, 유닉스, OpenVMS, OS/2 등 다양한 운용 체계에 설치되는 클라이언트/서버 프로토콜 기반의 프로그램이다.\n- 이 프로그램을 사용하여 다른 컴퓨터에 파일, 프린트, 기타 자원의 접근 요구를 할 수 있고, 다른 컴퓨터는 그 요구에 응하여 가부간 응답을 보낸다.",
+    "options": [
+      {
+        "text": "SAMBA",
+        "isCorrect": true
+      },
+      {
+        "text": "SDN",
+        "isCorrect": false
+      },
+      {
+        "text": "IoT",
+        "isCorrect": false
+      },
+      {
+        "text": "Ransomware",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "- SDN : 네트워크를 컴퓨터처럼 모델링하여 여러 사용자가 각각의 소프트웨어들로 네크워킹을 가상화하여 제어하고 관리하는 네트워크\n- IoT : 정보 통신 기술을 기반으로 실세계와 가상 세계의 다양한 사물들을 인터넷으로 서로 연결하여 진보된 서비스를 제공하기 위한 서비스 기반 기술\n- Ransomware : 인터넷 사용자의 컴퓨터에 잠입해 내부 문서나 파일 등을 암호화해 사용자가 열지 못하게 하는 프로그램"
+  },
+  {
+    "templateId": "_n10db63g5",
+    "category": "소프트웨어 개발 모음",
+    "id": "a76",
+    "question": "소프트웨어 프로젝트 관리를 효율적으로 수행하기 위한 3P 중 소프트웨어 프로젝트를 수행하기 위한 Task Framework의 고려와 가장 연관되는 것은?",
+    "options": [
+      {
+        "text": "People",
+        "isCorrect": false
+      },
+      {
+        "text": "Problem",
+        "isCorrect": false
+      },
+      {
+        "text": "Product",
+        "isCorrect": false
+      },
+      {
+        "text": "Process",
+        "isCorrect": true
+      }
+    ],
+    "explanation": "프로젝트 관리를 위한 3P(3대 요소)\n- 사람(People) : 프로젝트 관리에서 가장 기본이 되는 인적 자원\n- 문제(Problem) : 사용자 입장에서 문제를 분석하여 인식함\n- 프로세스(Process) : 소프트웨어 개발에 필요한 전체적인 작업 계획 및 구조(Framework)"
+  }
+]

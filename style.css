@@ -1,0 +1,573 @@
+/* 기본 설정 */
+:root {
+    --primary: #5b3cc4;
+    --bg: #f4f7fe;
+    --text: #333;
+}
+
+body {
+    background-color: var(--bg);
+    font-family: 'Pretendard', sans-serif;
+    margin: 0; padding: 0;
+}
+
+.screen { max-width: 800px; margin: 0 auto; padding: 20px; }
+
+/* 헤더 디자인 */
+.main-header { text-align: center; margin-bottom: 40px; }
+.welcome-msg { color: #666; font-size: 0.9rem; margin-top: 5px; }
+
+/* 메뉴 그리드 (반응형의 핵심) */
+.menu-grid {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* 자동으로 열 개수 조절 */
+}
+
+/* 카드 UI 디자인 */
+.menu-card {
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.menu-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(91, 60, 196, 0.2);
+}
+
+.menu-card .icon { font-size: 2.5rem; margin-right: 20px; }
+.menu-card h2 { margin: 0 0 8px 0; color: var(--primary); }
+.menu-card p { margin: 0; font-size: 0.85rem; color: #777; line-height: 1.5; }
+
+/* 상단 내비게이션 */
+.top-nav { margin-bottom: 20px; }
+.btn-back {
+    background: none; border: 1px solid #ddd; padding: 8px 15px;
+    border-radius: 5px; cursor: pointer; color: #666;
+}
+
+/* 모바일 대응 추가 조정 */
+@media (max-width: 480px) {
+    .menu-card { padding: 20px; flex-direction: column; text-align: center; }
+    .menu-card .icon { margin: 0 0 15px 0; }
+}
+/* 불꽃 애니메이션 - 메인 디자인 보존하며 추가 */
+.flame {
+    width: 30px;
+    height: 30px;
+    background: linear-gradient(-45deg, #ff512f, #dd2476);
+    border-radius: 0 50% 50% 50%;
+    transform: rotate(45deg);
+    box-shadow: 0 0 20px #ff512f;
+    transition: all 0.5s ease;
+    animation: flicker 0.1s infinite alternate;
+}
+
+@keyframes flicker {
+    0% { transform: rotate(45deg) scale(1); opacity: 0.9; }
+    100% { transform: rotate(45deg) scale(1.05); opacity: 1; }
+}
+/* 퀴즈 설정 카드 디자인 */
+.quiz-setup-card {
+    background: white; padding: 25px; border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1); margin-top: 20px;
+    color: var(--text);
+}
+.quiz-setup-card select, .quiz-setup-card input {
+    width: 100%; padding: 10px; margin: 10px 0;
+    border: 1px solid #ddd; border-radius: 5px;
+}
+.btn-start {
+    width: 100%; padding: 12px; background: var(--primary);
+    color: white; border: none; border-radius: 8px; cursor: pointer;
+}
+/* --- 퀴즈 문제 풀기 화면 전용 스타일 --- */
+.problem-card {
+    background: white; padding: 30px; border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1); margin-top: 20px;
+}
+.badge {
+    background: var(--primary); color: white; padding: 4px 12px;
+    border-radius: 20px; font-size: 0.8rem; display: inline-block; margin-bottom: 15px;
+}
+.question-text { font-size: 1.2rem; font-weight: bold; margin-bottom: 25px; line-height: 1.6; }
+.options-grid { display: grid; gap: 12px; }
+.option-btn {
+    width: 100%; padding: 18px; background: #fff; border: 1px solid #eee;
+    border-radius: 12px; text-align: left; cursor: pointer; font-size: 1rem;
+    transition: all 0.2s ease;
+}
+.option-btn:hover { background: #f8f6ff; border-color: var(--primary); transform: translateX(5px); }
+
+/* 문제 풀기 버튼 스타일 (설정 화면) */
+.btn-start {
+    width: 100%; padding: 15px; background: var(--primary); color: white;
+    border: none; border-radius: 10px; cursor: pointer; font-weight: bold; margin-top: 20px;
+}
+/* 퀴즈 설정 카드 디자인 보정 */
+.quiz-setup-card {
+    background: white; 
+    padding: 30px; 
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05); 
+    margin-top: 20px;
+}
+
+.quiz-setup-card label {
+    display: block;
+    margin-top: 15px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    color: #555;
+}
+
+/* 핵심 수정: box-sizing 추가로 튀어나감 방지 */
+.quiz-setup-card select, 
+.quiz-setup-card input {
+    width: 100%; 
+    padding: 12px 15px; 
+    margin: 8px 0 15px;
+    border: 1px solid #e0e0e0; 
+    border-radius: 10px;
+    font-size: 1rem;
+    box-sizing: border-box; /* 패딩을 너비 안에 포함시켜 정렬 맞춤 */
+    transition: border-color 0.2s;
+    appearance: none; /* 브라우저 기본 화살표 제거 (선택사항) */
+}
+
+/* 콤보박스 화살표 디자인을 위한 배경 추가 (선택사항) */
+.quiz-setup-card select {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23666' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 15px center;
+    background-size: 16px;
+    cursor: pointer;
+}
+
+.quiz-setup-card input:focus,
+.quiz-setup-card select:focus {
+    outline: none;
+    border-color: var(--primary);
+}
+
+.btn-start {
+    width: 100%; 
+    padding: 16px; 
+    background: var(--primary);
+    color: white; 
+    border: none; 
+    border-radius: 12px; 
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1.1rem;
+    margin-top: 10px;
+    transition: opacity 0.2s;
+}
+
+.btn-start:hover {
+    opacity: 0.9;
+}
+/* [요청사항] 문제 풀기 화면(quiz-screen)에서는 footer(불꽃) 숨기기 */
+#quiz-screen ~ .stats-footer {
+    display: none;
+}
+
+/* 메인 화면에서만 불꽃 보이기 (app.js의 상태에 따라 제어 가능하지만 CSS로 우선 처리) */
+body:has(#main-screen[style*="display: block"]) .stats-footer {
+    display: block;
+}
+
+/* 해설 카드 디자인 */
+.explanation-card {
+    margin-top: 20px;
+    padding: 15px;
+    background: #fdfdfd;
+    border-radius: 10px;
+    border-left: 5px solid var(--primary);
+    animation: slideUp 0.3s ease;
+}
+
+@keyframes slideUp {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+/* style.css 하단에 추가 */
+
+.btn-next, .btn-start {
+    width: 100%; 
+    padding: 16px; 
+    background: var(--primary);
+    color: white; 
+    border: none; 
+    border-radius: 12px; 
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1.1rem;
+    margin-top: 10px;
+    transition: all 0.2s;
+}
+
+.btn-next:hover, .btn-start:hover {
+    opacity: 0.9;
+    transform: translateY(-2px);
+}
+
+.explanation {
+    background: #f8f9fa;
+    padding: 20px;
+    border-radius: 12px;
+    margin-top: 20px;
+    border-left: 5px solid var(--primary);
+}
+/* 히스토리 테이블 스타일 */
+.history-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.history-table th, .history-table td {
+    padding: 12px;
+    border-bottom: 1px solid #eee;
+    text-align: center;
+    font-size: 0.9rem;
+}
+.history-table th { background: #f8f9fa; color: var(--primary); }
+.text-left { text-align: left !important; }
+
+/* 버튼 및 배지 */
+.btn-wrong-quiz {
+    width: 100%;
+    padding: 15px;
+    background: #ff4757;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+.badge { padding: 4px 8px; border-radius: 4px; font-size: 0.8rem; font-weight: bold; }
+.badge.success { background: #d4edda; color: #155724; }
+.badge.danger { background: #f8d7da; color: #721c24; }
+
+/* 페이징 */
+.pagination { display: flex; justify-content: center; gap: 5px; margin-top: 20px; }
+.pagination button { padding: 8px 12px; border: 1px solid #ddd; background: white; cursor: pointer; border-radius: 5px; }
+.pagination button.active { background: var(--primary); color: white; border-color: var(--primary); }
+
+/* 히스토리 테이블 스타일 개선 */
+.history-table {
+    width: 100%;
+    table-layout: fixed; /* 테이블 레이아웃 고정 */
+    border-collapse: collapse;
+    margin-top: 20px;
+    background: white;
+    border-radius: 10px;
+}
+
+.history-table th, .history-table td {
+    padding: 12px 0;
+    border-bottom: 1px solid #eee;
+    font-size: 0.85rem;
+    word-break: break-all; /* 긴 단어도 줄바꿈 */
+    overflow-wrap: break-word;
+}
+
+/* 날짜 컬럼: 고정 너비, 한 줄 표시 */
+.col-date {
+    width: 120px; 
+    white-space: nowrap; 
+    text-align: center;
+}
+
+/* 카테고리 컬럼: 적정 너비 유지하며 자동 줄바꿈 */
+.col-category {
+    width: 100px;
+    text-align: center;
+}
+
+/* 문제 컬럼: 남은 공간 모두 차지 및 자동 줄바꿈 */
+.col-question {
+    text-align: left !important;
+}
+
+/* 결과 컬럼: 고정 너비, 한 줄 표시 */
+.col-result {
+    width: 70px;
+    text-align: center;
+}
+
+.badge {
+    display: inline-block;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-weight: bold;
+    white-space: nowrap; /* 배지 내부 글자 줄바꿈 방지 */
+}
+/* 선택된 보기 스타일 */
+.option-btn.selected {
+    border-width: 2px;
+    box-shadow: 0 0 10px rgba(91, 60, 196, 0.2);
+    transform: translateX(5px);
+}
+/* --- style.css --- */
+
+/* 1. 모바일에서 보기 버튼 hover 효과 제거 */
+/* 데스크톱(마우스가 있는 기기)에서만 hover 효과 적용 */
+@media (hover: hover) {
+    .option-btn:hover { 
+        background: #f8f6ff; 
+        border-color: var(--primary); 
+        transform: translateX(5px); 
+    }
+}
+
+/* 2. 내 기록 화면 모바일 최적화 (768px 이하) */
+/* @media (max-width: 768px) {
+    .history-table thead {
+        display: none;
+    }
+
+    .history-table, .history-table tbody, .history-table tr, .history-table td {
+        display: block;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .history-table tr {
+        border-bottom: 2px solid #eee;
+        padding: 15px 10px;
+        position: relative;
+    }
+
+    .col-date {
+        width: auto !important;
+        text-align: left;
+        color: #888;
+        font-size: 0.8rem !important;
+        margin-bottom: 8px;
+        white-space: normal !important;
+    }
+
+    .col-category {
+        width: auto !important;
+        text-align: left !important;
+        padding: 0 !important;
+    }
+
+    .col-question {
+        padding: 5px 0 0 0 !important;
+        font-weight: 600;
+        font-size: 1rem !important;
+    }
+
+    .col-result {
+        position: absolute;
+        right: 10px;
+        top: 15px;
+        width: auto !important;
+    }
+
+    .badge {
+        font-size: 1.1rem !important;
+        padding: 5px 10px !important;
+    }
+} */
+
+/* 결과 배지 텍스트가 O, X일 때 더 깔끔하게 보이도록 수정 */
+.badge.success, .badge.danger {
+    min-width: 30px;
+    text-align: center;
+}
+/* --- style.css 수정 --- */
+
+/* 기존 col-category 관련 설정 삭제 또는 주석 처리 */
+.col-category { display: none; } 
+
+/* 문제 항목 내 줄바꿈(\n) 처리 및 레이아웃 */
+.col-question {
+    text-align: left !important;
+    white-space: pre-wrap; /* \n 문자를 줄바꿈으로 렌더링 */
+    line-height: 1.5;
+}
+
+/* 결과 배지 스타일 제거 및 텍스트 스타일 설정 */
+.result-text {
+    font-weight: bold;
+    font-size: 12px;
+}
+.result-text.success { color: #28a745; }
+.result-text.danger { color: #dc3545; }
+
+/* 모바일 레이아웃 재조정 */
+/* @media (max-width: 768px) {
+    .history-table tr {
+        display: flex;
+        flex-direction: column;
+        padding: 15px;
+        position: relative;
+    }
+
+    .col-date {
+        order: 1;
+        width: 100% !important;
+        margin-bottom: 10px;
+    }
+
+    .col-question {
+        order: 2;
+        width: 100% !important;
+        padding: 0 !important;
+    }
+
+    .col-result {
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        width: auto !important;
+    }
+} */
+
+/* --- style.css --- */
+
+/* 테이블 레이아웃 고정 및 최적화 */
+.history-table {
+    table-layout: fixed;
+    width: 100%;
+}
+
+/* 문제 정보 열 (카테고리 + 문제) */
+.col-info {
+    text-align: left !important;
+    padding: 15px !important;
+}
+
+/* 문제 텍스트 내 줄바꿈(\n) 및 공백 유지 */
+.question-text-wrapper {
+    white-space: pre-wrap; /* \n 실제 줄바꿈 적용 */
+    word-break: break-all;
+    line-height: 1.6;
+    margin-top: 8px;
+    font-size: 1rem;
+    color: var(--text);
+}
+
+/* 결과 O, X 텍스트 스타일 */
+.result-text {
+    font-size: 1.4rem;
+    font-weight: 800;
+}
+.result-text.success { color: #28a745; }
+.result-text.danger { color: #dc3545; }
+
+/* 모바일 날짜 줄바꿈 강제 */
+.col-date {
+    font-size: 0.85rem;
+    color: #666;
+    line-height: 1.4;
+    width: 100px;
+}
+
+/* 카테고리 칩 스타일 */
+.cat-tag {
+    display: inline-block;
+    padding: 2px 8px;
+    background: #f0ebff;
+    color: var(--primary);
+    border-radius: 4px;
+    font-size: 0.75rem;
+    font-weight: bold;
+}
+/* --- style.css --- */
+
+/* 1. 카테고리 열 관련 스타일 완전 삭제 */
+.col-category { display: none !important; }
+
+/* 2. 문제 정보 영역 (카테고리 + 문제 내용) */
+.col-info {
+    text-align: left !important;
+    padding: 15px !important;
+}
+
+/* 3. 문제 텍스트 내 \n 줄바꿈 반영 */
+.question-text-wrapper {
+    white-space: pre-wrap; /* \n 실제 줄바꿈 적용 */
+    word-break: break-all;
+    line-height: 1.5;
+    font-size: 0.95rem;
+    color: #333;
+}
+
+/* 4. 결과 O, X 전용 스타일 (배지 아님) */
+.result-text {
+    font-size: 12px;
+    font-weight: bold;
+}
+.result-text.success { color: #28a745; } /* 정답은 초록색 O */
+.result-text.danger { color: #dc3545; }  /* 오답은 빨간색 X */
+
+/* 5. 날짜 처리 (모바일/데스크톱 공용) */
+.col-date {
+    width: 100px;
+    font-size: 0.85rem;
+    color: #666;
+    text-align: center;
+}
+
+/* 6. 모바일에서 테이블 구조 깨짐 방지 */
+/* @media (max-width: 768px) {
+    .history-table th:nth-child(1), .history-table td:nth-child(1) { width: 85px; }
+    .history-table th:nth-child(3), .history-table td:nth-child(3) { width: 50px; }
+} */
+/* 문제 텍스트 줄바꿈 적용 */
+.question {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 25px;
+    line-height: 1.6;
+    white-space: pre-wrap; /* \n을 줄바꿈으로 표시 */
+    word-break: break-all;
+}
+
+/* 보기 버튼 내 텍스트 줄바꿈 적용 */
+/* .option-btn {
+    width: 100%;
+    padding: 18px;
+    background: #fff;
+    border: 1px solid #eee;
+    border-radius: 12px;
+    text-align: left;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: all 0.2s ease;
+    white-space: pre-wrap;
+    line-height: 1.4;
+} */
+
+/* 해설 박스 내 텍스트 줄바꿈 적용 */
+.explanation {
+    background: #f8f9fa;
+    padding: 20px;
+    border-radius: 12px;
+    margin-top: 20px;
+    border-left: 5px solid var(--primary);
+    white-space: pre-wrap; /* 해설 내 \n 줄바꿈 적용 */
+}
+/* style.css */
+
+/* 해설 박스 전체와 그 안의 p 태그에 줄바꿈 적용 */
+.explanation, 
+.explanation p {
+    white-space: pre-wrap !important; /* HTML 내의 \n을 실제 줄바꿈으로 렌더링 */
+    word-break: break-all;           /* 너무 긴 단어 방지 */
+    margin-bottom: 10px;             /* 문단 간격 */
+}
