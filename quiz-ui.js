@@ -196,7 +196,7 @@ const QuizUI = {
         }
     },
     
-    async submitAnswer(answerIndex) {
+    submitAnswer(answerIndex) {
         // 1. 선택 여부 확인
         if (this.selectedOption === null) {
             alert("보기를 선택해주세요!");
@@ -214,7 +214,7 @@ const QuizUI = {
         if (checkBtn) checkBtn.style.display = 'none';
 
         // if (!this.isReadOnly) {
-            await QuizService.saveHistory({
+            QuizService.saveHistory({
                 quizId: problem.id,
                 choiceOption: this.selectedOption,
                 correctYn: isCorrect ? 'Y' : 'N',
