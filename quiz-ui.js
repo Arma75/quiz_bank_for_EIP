@@ -213,13 +213,14 @@ const QuizUI = {
         // 정답 확인 버튼 숨기기
         if (checkBtn) checkBtn.style.display = 'none';
 
-        if (!this.isReadOnly) {
+        // if (!this.isReadOnly) {
             await QuizService.saveHistory({
                 quizId: problem.id,
                 choiceOption: this.selectedOption,
-                correctYn: isCorrect ? 'Y' : 'N'
+                correctYn: isCorrect ? 'Y' : 'N',
+                solveType: this.isReadOnly? 'WRONG_ONLY' : 'ALL'
             });
-        }
+        // }
 
         // 시각적 피드백
         const allButtons = document.querySelectorAll('.option-btn');
