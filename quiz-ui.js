@@ -108,6 +108,8 @@ const QuizUI = {
             return;
         }
 
+        this.isReadOnly = false;
+
         this.currentQuizData = problems;
         this.currentIndex = 0;
         this.saveState();
