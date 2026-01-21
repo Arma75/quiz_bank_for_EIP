@@ -50,8 +50,8 @@ const QuizUI = {
                     <option>카테고리를 불러오는 중...</option>
                 </select>
 
-                <label>문제 개수 (1~100)</label>
-                <input type="number" id="quiz-amount" value="5" min="1" max="100">
+                <label>문제 개수 (1~500)</label>
+                <input type="number" id="quiz-amount" value="5" min="1" max="500">
 
                 <button id="btn-quiz-start" class="btn-start" disabled onclick="QuizUI.startNewQuiz()">
                     불러오는 중...
@@ -64,6 +64,7 @@ const QuizUI = {
     updateCategoryOptions(categories) {
         const select = document.getElementById('category-select');
         const btn = document.getElementById('btn-quiz-start');
+        const amountInput = document.getElementById('quiz-amount');
         
         if (!select || !btn) return;
 
@@ -74,6 +75,18 @@ const QuizUI = {
         select.disabled = false; // 선택창 활성화
         btn.innerText = "문제 풀기 시작";
         btn.disabled = false; // 버튼 활성화
+        
+        select.addEventListener('change', (e) => {
+            if (e.target.value !== 'ALL') {
+                if (amountInput) {
+                    amountInput.value = 500;
+                }
+            } else {
+                if (amountInput) {
+                    amountInput.value = 5;
+                }
+            }
+        });
     },
 
     renderSetup(categories) {
@@ -245,8 +258,8 @@ const QuizUI = {
         document.getElementById('explanation-box').style.display = 'block';
         StatsService.incrementTodayCount(isCorrect);
         
+        this.currentIndex++; 
         if (this.currentIndex < this.currentQuizData.length) {
-            this.currentIndex++; 
             this.saveState(); 
         } else {
             localStorage.removeItem('quiz_state');
