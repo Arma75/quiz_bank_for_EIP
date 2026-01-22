@@ -1,3 +1,14 @@
+const escapeHTML = (str) => {
+    if (!str) return "";
+    return str.replace(/[&<>"']/g, (m) => ({
+        '&': '&amp;',
+        '<': '&lt;',
+        '>': '&gt;',
+        '"': '&quot;',
+        "'": '&#39;'
+    }[m]));
+};
+
 const QuizUI = {
     currentQuizData: null,
     currentIndex: 0,
@@ -170,11 +181,11 @@ const QuizUI = {
         content.innerHTML = `
             <div class="quiz-container">
                 <div class="progress">${this.currentIndex + 1} / ${this.currentQuizData.length}</div>
-                <h3 class="question">${formattedQuestion}</h3>
+                <h3 class="question">${escapeHTML(formattedQuestion)}</h3>
                 <div class="options-grid">
                     ${options.map((opt, idx) => `
                         <button class="option-btn" id="opt-${opt.num}" onclick="QuizUI.selectOption(${opt.num})">
-                            ${opt.text}
+                            ${escapeHTML(opt.text)}
                         </button>
                     `).join('')}
                 </div>
@@ -182,7 +193,7 @@ const QuizUI = {
                     정답 확인
                 </button>
                 <div id="explanation-box" style="display:none;" class="explanation">
-                    <p><strong>정답: ${answer.text}</strong></p>
+                    <p><strong>정답: ${escapeHTML(answer.text)}</strong></p>
                     <p>${formattedExplanation}</p>
                     <button class="btn-next" onclick="QuizUI.nextStep()">다음 문제</button>
                 </div>
