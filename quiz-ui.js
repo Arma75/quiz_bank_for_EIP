@@ -28,6 +28,7 @@ const QuizUI = {
             try {
                 const state = JSON.parse(saved);
                 if (state.data && state.data.length > 0) {
+                    // alert("총 문제 수 : " + state.data.length + " , 현재 문제 번호 : " +  (state.index + 1));
                     this.currentQuizData = state.data;
                     this.currentIndex = state.index;
                     this.renderProblem(); // 이어 풀기라면 즉시 문제 화면으로
@@ -147,7 +148,12 @@ const QuizUI = {
             this.isAnswering = false;
             this.selectedOption = null; // 문제 렌더링 시 선택 초기화
             const problem = this.currentQuizData[this.currentIndex];
+            console.log("problem", problem);
+            // alert(JSON.stringify(problem));
             const content = document.getElementById('quiz-content');
+            if (problem.answer == 35) {
+                problem.answer = 3;
+            }
 
             // 1. 보기 데이터 구조화 (원래 번호 유지)
             let options = [
