@@ -142,63 +142,67 @@ const QuizUI = {
 
     // quiz-ui.js 내의 renderProblem 수정 예시
     renderProblem() {
-        this.isAnswering = false;
-        this.selectedOption = null; // 문제 렌더링 시 선택 초기화
-        const problem = this.currentQuizData[this.currentIndex];
-        const content = document.getElementById('quiz-content');
 
-        // 1. 보기 데이터 구조화 (원래 번호 유지)
-        let options = [
-            { num: 1, text: problem.option1 },
-            { num: 2, text: problem.option2 },
-            { num: 3, text: problem.option3 },
-            { num: 4, text: problem.option4 }
-        ];
+        try {
+            this.isAnswering = false;
+            this.selectedOption = null; // 문제 렌더링 시 선택 초기화
+            const problem = this.currentQuizData[this.currentIndex];
+            const content = document.getElementById('quiz-content');
 
-        // 2. randomYn이 'Y'이면 보기 셔플
-        console.log(problem);
-        console.log(options);
-        if (problem.randomYn === 'Y') {
-            options.sort(() => Math.random() - 0.5);
-        }
-        console.log(options);
-        let answer = options.filter((o, i) => o.num == problem.answer)[0];
-        let answerIndex = 0;
-        for (; answerIndex < 4; answerIndex++) {
-            if (options[answerIndex].num == problem.answer) {
-                break;
+            // 1. 보기 데이터 구조화 (원래 번호 유지)
+            let options = [
+                { num: 1, text: problem.option1 },
+                { num: 2, text: problem.option2 },
+                { num: 3, text: problem.option3 },
+                { num: 4, text: problem.option4 }
+            ];
+
+            // 2. randomYn이 'Y'이면 보기 셔플
+            if (problem.randomYn === 'Y') {
+                options.sort(() => Math.random() - 0.5);
             }
-        }
-        // [수정] \n 또는 \\n 문자열을 실제 줄바꿈 기호로 변환 (문제 텍스트)
-        const formattedQuestion = problem.question.replace(/\\n/g, '\n').replace(/\n/g, '\n');
-        
-        // 해설 텍스트 추출 (null 체크 포함)
-        const rawExplanation = problem.explanation || '해설이 없습니다.';
-        
-        // \n 문자열이든 실제 개행이든 모두 <br> 태그로 변환
-        const formattedExplanation = rawExplanation.replace(/(\r\n|\n|\\n)/g, '<br>');
+            let answer = options.filter((o, i) => o.num == problem.answer)[0];
+            let answerIndex = 0;
+            for (; answerIndex < 4; answerIndex++) {
+                if (options[answerIndex].num == problem.answer) {
+                    break;
+                }
+            }
+            // [수정] \n 또는 \\n 문자열을 실제 줄바꿈 기호로 변환 (문제 텍스트)
+            const formattedQuestion = problem.question.replace(/\\n/g, '\n').replace(/\n/g, '\n');
+            
+            // 해설 텍스트 추출 (null 체크 포함)
+            const rawExplanation = problem.explanation || '해설이 없습니다.';
+            
+            // \n 문자열이든 실제 개행이든 모두 <br> 태그로 변환
+            const formattedExplanation = rawExplanation.replace(/(\r\n|\n|\\n)/g, '<br>');
 
-        content.innerHTML = `
-            <div class="quiz-container">
-                <div class="progress">${this.currentIndex + 1} / ${this.currentQuizData.length}</div>
-                <h3 class="question">${escapeHTML(formattedQuestion)}</h3>
-                <div class="options-grid">
-                    ${options.map((opt, idx) => `
-                        <button class="option-btn" id="opt-${opt.num}" onclick="QuizUI.selectOption(${opt.num})">
-                            ${escapeHTML(opt.text)}
-                        </button>
-                    `).join('')}
+            content.innerHTML = `
+                <div class="quiz-container">
+                    <div class="progress">${this.currentIndex + 1} / ${this.currentQuizData.length}</div>
+                    <h3 class="question">${escapeHTML(formattedQuestion)}</h3>
+                    <div class="options-grid">
+                        ${options.map((opt, idx) => `
+                            <button class="option-btn" id="opt-${opt.num}" onclick="QuizUI.selectOption(${opt.num})">
+                                ${escapeHTML(opt.text)}
+                            </button>
+                        `).join('')}
+                    </div>
+                    <button id="btn-check-answer" class="btn-start" style="margin-top: 20px;" onclick="QuizUI.submitAnswer(${answerIndex})">
+                        정답 확인
+                    </button>
+                    <div id="explanation-box" style="display:none;" class="explanation">
+                        <p><strong>정답: ${escapeHTML(answer.text)}</strong></p>
+                        <p>${formattedExplanation}</p>
+                        <button class="btn-next" onclick="QuizUI.nextStep()">다음 문제</button>
+                    </div>
                 </div>
-                <button id="btn-check-answer" class="btn-start" style="margin-top: 20px;" onclick="QuizUI.submitAnswer(${answerIndex})">
-                    정답 확인
-                </button>
-                <div id="explanation-box" style="display:none;" class="explanation">
-                    <p><strong>정답: ${escapeHTML(answer.text)}</strong></p>
-                    <p>${formattedExplanation}</p>
-                    <button class="btn-next" onclick="QuizUI.nextStep()">다음 문제</button>
-                </div>
-            </div>
-        `;
+            `;
+        } catch (error) {
+            // 에러 발생 시 실행될 코드
+            console.error("에러 상세 내용:", error); // 개발자 도구 로그용
+            alert("오류가 발생했습니다: " + error.message); // 사용자 알림용
+        }
     },
 
     // 보기를 클릭했을 때 실행 (선택 상태 표시)
@@ -290,10 +294,16 @@ const QuizUI = {
     },
 
     saveState() {
-        localStorage.setItem('quiz_state', JSON.stringify({
-            data: this.currentQuizData,
-            index: this.currentIndex
-        }));
+        try {
+            localStorage.setItem('quiz_state', JSON.stringify({
+                data: this.currentQuizData,
+                index: this.currentIndex
+            }));
+        } catch (error) {
+            // 에러 발생 시 실행될 코드
+            console.error("에러 상세 내용:", error); // 개발자 도구 로그용
+            alert("오류가 발생했습니다: " + error.message); // 사용자 알림용
+        }
     },
 
     startSpecialSession(data, isReadOnly = false) {
