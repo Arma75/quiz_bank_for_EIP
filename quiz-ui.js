@@ -289,13 +289,18 @@ const QuizUI = {
 
     nextStep() {
         // this.currentIndex++;
-        if (this.currentIndex < this.currentQuizData.length) {
-            this.saveState();
-            this.renderProblem();
-        } else {
-            alert("학습을 완료했습니다!");
-            localStorage.removeItem('quiz_state');
-            router.navigate('main');
+        try {
+            if (this.currentIndex < this.currentQuizData.length) {
+                this.saveState();
+                this.renderProblem();
+            } else {
+                alert("학습을 완료했습니다!");
+                localStorage.removeItem('quiz_state');
+                router.navigate('main');
+            }
+        } catch (error) {
+            console.error("에러 상세 내용:", error); // 개발자 도구 로그용
+            alert("오류가 발생했습니다: " + error.message); // 사용자 알림용
         }
     },
 
